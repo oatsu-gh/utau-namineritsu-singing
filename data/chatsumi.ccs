@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Scenario Code="7251BC4B6168E7B2992FA620BD3E1E77">
+  <Generation>
+    <Author Version="7.0.22.3" />
+    <TTS Version="5.1.5">
+      <Dictionary Version="3.0.2" />
+      <SoundSources>
+        <SoundSource Version="1.7.3" Id="A" Name="さとうささら" />
+        <SoundSource Version="1.6.0" Id="B" Name="すずきつづみ" />
+        <SoundSource Version="1.7.0" Id="C" Name="タカハシ" />
+        <SoundSource Version="1.0.0" Id="ONE" Name="ONE" />
+        <SoundSource Version="1.0.0" Id="CTV-JPF-FP2" Name="IA" />
+      </SoundSources>
+    </TTS>
+    <SVSS Version="5.1.1">
+      <Dictionary Version="3.0.0" />
+      <SoundSources>
+        <SoundSource Version="1.7.0" Id="A" Name="さとうささら" />
+      </SoundSources>
+    </SVSS>
+  </Generation>
+  <Sequence Id="">
+    <Scene Id="">
+      <Timeline Partition="200,456" CurrentPosition="00:00:00">
+        <ViewScale Horizontal="1" Vertical="0.64583333333333337" />
+      </Timeline>
+      <TalkEditor Partition="542">
+        <Extension VerticalRatio="*,*" />
+      </TalkEditor>
+      <SongEditor Partition="64" Quantize="240" Mode="0" EditingTool="1">
+        <ViewScale Horizontal="80" Vertical="14" />
+        <ReferenceState Current="None" Previous="None" />
+      </SongEditor>
+      <Units>
+        <Unit Version="1.0" Id="" Category="SingerSong" Group="a3c0517a-662f-4355-aab7-63a6196439a1" StartTime="00:00:00" Duration="00:01:14" CastId="A" Language="Japanese">
+          <Song Version="1.07">
+            <Tempo>
+              <Sound Clock="0" Tempo="120" />
+            </Tempo>
+            <Beat>
+              <Time Clock="0" Beats="4" BeatType="4" />
+            </Beat>
+            <Score>
+              <Key Clock="0" Fifths="1" Mode="0" />
+              <Dynamics Clock="0" Value="5" />
+              <Note Clock="8640" PitchStep="2" PitchOctave="4" Duration="960" Lyric="な" />
+              <Note Clock="9600" PitchStep="7" PitchOctave="4" Duration="960" Lyric="つ" />
+              <Note Clock="10560" PitchStep="9" PitchOctave="4" Duration="960" Lyric="も" />
+              <Note Clock="11520" PitchStep="11" PitchOctave="4" Duration="1440" Lyric="ち" />
+              <Note Clock="12960" PitchStep="11" PitchOctave="4" Duration="480" Lyric="か" />
+              <Note Clock="13440" PitchStep="11" PitchOctave="4" Duration="960" Lyric="ず" />
+              <Note Clock="14400" PitchStep="11" PitchOctave="4" Duration="960" Lyric="く" />
+              <Note Clock="15360" PitchStep="2" PitchOctave="5" Duration="1440" Lyric="は" />
+              <Note Clock="16800" PitchStep="2" PitchOctave="5" Duration="480" Lyric="ち" />
+              <Note Clock="17280" PitchStep="2" PitchOctave="5" Duration="960" Lyric="じゅ" />
+              <Note Clock="18240" PitchStep="11" PitchOctave="4" Duration="960" Lyric="う" />
+              <Note Clock="19200" PitchStep="9" PitchOctave="4" Duration="960" Lyric="は" />
+              <Note Clock="20160" PitchStep="7" PitchOctave="4" Duration="960" Lyric="ち" />
+              <Note Clock="21120" PitchStep="9" PitchOctave="4" Duration="960" Lyric="や" />
+              <Note Clock="24000" PitchStep="11" PitchOctave="4" Duration="960" Lyric="の" />
+              <Note Clock="24960" PitchStep="11" PitchOctave="4" Duration="960" Lyric="に" />
+              <Note Clock="25920" PitchStep="2" PitchOctave="5" Duration="960" Lyric="も" />
+              <Note Clock="26880" PitchStep="11" PitchOctave="4" Duration="1440" Lyric="や" />
+              <Note Clock="28320" PitchStep="11" PitchOctave="4" Duration="480" Lyric="ま" />
+              <Note Clock="28800" PitchStep="11" PitchOctave="4" Duration="960" Lyric="に" />
+              <Note Clock="29760" PitchStep="9" PitchOctave="4" Duration="960" Lyric="も" />
+              <Note Clock="30720" PitchStep="11" PitchOctave="4" Duration="1440" Lyric="わ" />
+              <Note Clock="32160" PitchStep="11" PitchOctave="4" Duration="480" Lyric="か" />
+              <Note Clock="32640" PitchStep="9" PitchOctave="4" Duration="960" Lyric="ば" />
+              <Note Clock="33600" PitchStep="7" PitchOctave="4" Duration="960" Lyric="が" />
+              <Note Clock="34560" PitchStep="4" PitchOctave="4" Duration="960" Lyric="し" />
+              <Note Clock="35520" PitchStep="4" PitchOctave="4" Duration="960" Lyric="げ" />
+              <Note Clock="36480" PitchStep="2" PitchOctave="4" Duration="960" Lyric="る" />
+              <Note Clock="39360" PitchStep="2" PitchOctave="4" Duration="960" Lyric="あ" />
+              <Note Clock="40320" PitchStep="7" PitchOctave="4" Duration="960" Lyric="れ" />
+              <Note Clock="41280" PitchStep="9" PitchOctave="4" Duration="960" Lyric="に" />
+              <Note Clock="42240" PitchStep="11" PitchOctave="4" Duration="1440" Lyric="み" />
+              <Note Clock="43680" PitchStep="11" PitchOctave="4" Duration="480" Lyric="え" />
+              <Note Clock="44160" PitchStep="11" PitchOctave="4" Duration="960" Lyric="る" />
+              <Note Clock="45120" PitchStep="11" PitchOctave="4" Duration="960" Lyric="わ" />
+              <Note Clock="46080" PitchStep="2" PitchOctave="5" Duration="1440" Lyric="ちゃ" />
+              <Note Clock="47520" PitchStep="2" PitchOctave="5" Duration="480" Lyric="つ" />
+              <Note Clock="48000" PitchStep="2" PitchOctave="5" Duration="960" Lyric="み" />
+              <Note Clock="48960" PitchStep="11" PitchOctave="4" Duration="960" Lyric="じゃ" />
+              <Note Clock="49920" PitchStep="9" PitchOctave="4" Duration="960" Lyric="な" />
+              <Note Clock="50880" PitchStep="7" PitchOctave="4" Duration="960" Lyric="い" />
+              <Note Clock="51840" PitchStep="9" PitchOctave="4" Duration="960" Lyric="か" />
+              <Note Clock="54720" PitchStep="2" PitchOctave="5" Duration="960" Lyric="あ" />
+              <Note Clock="55680" PitchStep="2" PitchOctave="5" Duration="960" Lyric="か" />
+              <Note Clock="56640" PitchStep="11" PitchOctave="4" Duration="960" Lyric="ね" />
+              <Note Clock="57600" PitchStep="9" PitchOctave="4" Duration="1440" Lyric="だ" />
+              <Note Clock="59040" PitchStep="9" PitchOctave="4" Duration="480" Lyric="す" />
+              <Note Clock="59520" PitchStep="7" PitchOctave="4" Duration="960" Lyric="き" />
+              <Note Clock="60480" PitchStep="4" PitchOctave="4" Duration="960" Lyric="に" />
+              <Note Clock="61440" PitchStep="2" PitchOctave="4" Duration="960" Lyric="す" />
+              <Note Clock="62400" PitchStep="7" PitchOctave="4" Duration="960" Lyric="げ" />
+              <Note Clock="63360" PitchStep="9" PitchOctave="4" Duration="1440" Lyric="の" />
+              <Note Clock="64800" PitchStep="11" PitchOctave="4" Duration="480" Lyric="か" />
+              <Note Clock="65280" PitchStep="7" PitchOctave="4" Duration="2880" Lyric="さ" />
+              <Note Clock="77760" PitchStep="2" PitchOctave="4" Duration="960" Lyric="ひ" />
+              <Note Clock="78720" PitchStep="7" PitchOctave="4" Duration="960" Lyric="よ" />
+              <Note Clock="79680" PitchStep="9" PitchOctave="4" Duration="960" Lyric="り" />
+              <Note Clock="80640" PitchStep="11" PitchOctave="4" Duration="1440" Lyric="つ" />
+              <Note Clock="82080" PitchStep="11" PitchOctave="4" Duration="480" Lyric="ず" />
+              <Note Clock="82560" PitchStep="11" PitchOctave="4" Duration="960" Lyric="き" />
+              <Note Clock="83520" PitchStep="11" PitchOctave="4" Duration="960" Lyric="の" />
+              <Note Clock="84480" PitchStep="2" PitchOctave="5" Duration="1920" Lyric="きょ" />
+              <Note Clock="86400" PitchStep="2" PitchOctave="5" Duration="960" Lyric="こ" />
+              <Note Clock="87360" PitchStep="11" PitchOctave="4" Duration="960" Lyric="の" />
+              <Note Clock="88320" PitchStep="9" PitchOctave="4" Duration="960" Lyric="ご" />
+              <Note Clock="89280" PitchStep="7" PitchOctave="4" Duration="960" Lyric="ろ" />
+              <Note Clock="90240" PitchStep="9" PitchOctave="4" Duration="960" Lyric="を" />
+              <Note Clock="93120" PitchStep="11" PitchOctave="4" Duration="960" Lyric="こ" />
+              <Note Clock="94080" PitchStep="11" PitchOctave="4" Duration="960" Lyric="こ" />
+              <Note Clock="95040" PitchStep="2" PitchOctave="5" Duration="960" Lyric="ろ" />
+              <Note Clock="96000" PitchStep="11" PitchOctave="4" Duration="1440" Lyric="の" />
+              <Note Clock="97440" PitchStep="11" PitchOctave="4" Duration="480" Lyric="ど" />
+              <Note Clock="97920" PitchStep="11" PitchOctave="4" Duration="960" Lyric="か" />
+              <Note Clock="98880" PitchStep="9" PitchOctave="4" Duration="960" Lyric="に" />
+              <Note Clock="99840" PitchStep="11" PitchOctave="4" Duration="1440" Lyric="つ" />
+              <Note Clock="101280" PitchStep="11" PitchOctave="4" Duration="480" Lyric="み" />
+              <Note Clock="101760" PitchStep="9" PitchOctave="4" Duration="960" Lyric="つ" />
+              <Note Clock="102720" PitchStep="7" PitchOctave="4" Duration="960" Lyric="つ" />
+              <Note Clock="103680" PitchStep="4" PitchOctave="4" Duration="960" Lyric="う" />
+              <Note Clock="104640" PitchStep="4" PitchOctave="4" Duration="960" Lyric="た" />
+              <Note Clock="105600" PitchStep="2" PitchOctave="4" Duration="960" Lyric="う" />
+              <Note Clock="108480" PitchStep="2" PitchOctave="4" Duration="960" Lyric="つ" />
+              <Note Clock="109440" PitchStep="7" PitchOctave="4" Duration="960" Lyric="め" />
+              <Note Clock="110400" PitchStep="9" PitchOctave="4" Duration="960" Lyric="よ" />
+              <Note Clock="111360" PitchStep="11" PitchOctave="4" Duration="1440" Lyric="つ" />
+              <Note Clock="112800" PitchStep="11" PitchOctave="4" Duration="480" Lyric="め" />
+              <Note Clock="113280" PitchStep="11" PitchOctave="4" Duration="960" Lyric="つ" />
+              <Note Clock="114240" PitchStep="11" PitchOctave="4" Duration="960" Lyric="め" />
+              <Note Clock="115200" PitchStep="2" PitchOctave="5" Duration="1440" Lyric="つ" />
+              <Note Clock="116640" PitchStep="2" PitchOctave="5" Duration="480" Lyric="ま" />
+              <Note Clock="117120" PitchStep="2" PitchOctave="5" Duration="960" Lyric="ね" />
+              <Note Clock="118080" PitchStep="11" PitchOctave="4" Duration="960" Lyric="ば" />
+              <Note Clock="119040" PitchStep="9" PitchOctave="4" Duration="960" Lyric="な" />
+              <Note Clock="120000" PitchStep="7" PitchOctave="4" Duration="960" Lyric="ら" />
+              <Note Clock="120960" PitchStep="9" PitchOctave="4" Duration="960" Lyric="ぬ" />
+              <Note Clock="123840" PitchStep="2" PitchOctave="5" Duration="960" Lyric="つ" />
+              <Note Clock="124800" PitchStep="2" PitchOctave="5" Duration="960" Lyric="ま" />
+              <Note Clock="125760" PitchStep="11" PitchOctave="4" Duration="960" Lyric="にゃ" />
+              <Note Clock="126720" PitchStep="9" PitchOctave="4" Duration="1440" Lyric="に" />
+              <Note Clock="128160" PitchStep="9" PitchOctave="4" Duration="480" Lyric="ほ" />
+              <Note Clock="128640" PitchStep="7" PitchOctave="4" Duration="960" Lyric="ん" />
+              <Note Clock="129600" PitchStep="4" PitchOctave="4" Duration="960" Lyric="の" />
+              <Note Clock="130560" PitchStep="2" PitchOctave="4" Duration="960" Lyric="ちゃ" />
+              <Note Clock="131520" PitchStep="7" PitchOctave="4" Duration="960" Lyric="に" />
+              <Note Clock="132480" PitchStep="9" PitchOctave="4" Duration="1440" Lyric="な" />
+              <Note Clock="133920" PitchStep="11" PitchOctave="4" Duration="480" Lyric="ら" />
+              <Note Clock="134400" PitchStep="7" PitchOctave="4" Duration="2880" Lyric="ぬ" />
+            </Score>
+          </Song>
+        </Unit>
+      </Units>
+      <Groups ActiveGroup="a3c0517a-662f-4355-aab7-63a6196439a1">
+        <Group Version="1.0" Id="320a14b1-3d41-46ca-818c-97c7850bbb6c" Category="TextVocal" Name="トーク 1" Color="#FF267CCB" Volume="0" Pan="0" IsSolo="false" IsMuted="false" CastId="A" Language="Japanese" />
+        <Group Version="1.0" Id="a3c0517a-662f-4355-aab7-63a6196439a1" Category="SingerSong" Name="ソング 1" Color="#FFAF1F14" Volume="0" Pan="0" IsSolo="false" IsMuted="false" CastId="A" Language="Japanese" />
+      </Groups>
+      <SoundSetting Rhythm="4/4" Tempo="78" MasterVolume="0" />
+    </Scene>
+  </Sequence>
+</Scenario>
