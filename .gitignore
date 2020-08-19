@@ -1,2 +1,4 @@
 *.mid
 *.midi
+*.cache*
+*.wav
