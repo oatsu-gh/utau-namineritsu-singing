@@ -1,44 +1,6 @@
 _____ξ・ヮ・) < utau2db v0.0.1 ________
 Copyright (c) 2020 oatsu
 
-
---------------------------------------------------------------------------------
-path_ust: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\chatsumi\chatsumi.ust
-path_vb : D:\UTAU/voice/波音リツ・キレ音源Ver1.0（歌唱DB用改変版）
-l_prefix: ['breath', 'C5', 'D4', 'G4']
-path_ini: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\chatsumi\chatsumi.ini
-  mode: OtoIni(romaji_cv) -> Label(mono)
-path_lab: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\chatsumi\chatsumi.lab
---------------------------------------------------------------------------------
-path_ust: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\donguri_korokoro\donguri_korokoro.ust
-path_vb : D:\UTAU/voice/波音リツ・キレ音源Ver1.0（歌唱DB用改変版）
-l_prefix: ['breath', 'C5', 'D4', 'G4']
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っG4'
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っG4'
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っG4'
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っG4'
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っG4'
-path_ini: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\donguri_korokoro\donguri_korokoro.ini
-  mode: OtoIni(romaji_cv) -> Label(mono)
-path_lab: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\donguri_korokoro\donguri_korokoro.lab
---------------------------------------------------------------------------------
-path_ust: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\genkotsuyamano_tanukisan\genkotsuyamano_tanukisan.ust
-path_vb : D:\UTAU/voice/波音リツ・キレ音源Ver1.0（歌唱DB用改変版）
-l_prefix: ['breath', 'C5', 'D4', 'G4']
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っG4'
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っG4'
-path_ini: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\genkotsuyamano_tanukisan\genkotsuyamano_tanukisan.ini
-  mode: OtoIni(romaji_cv) -> Label(mono)
-path_lab: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\genkotsuyamano_tanukisan\genkotsuyamano_tanukisan.lab
---------------------------------------------------------------------------------
-path_ust: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\haruyo_koi\haruyo_koi.ust
-path_vb : D:\UTAU/voice/波音リツ・キレ音源Ver1.0（歌唱DB用改変版）
-l_prefix: ['breath', 'C5', 'D4', 'G4']
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っC5'
-    [ERROR] KeyError of d_consdur in ust2otoini_for_utau2db : 'っC5'
-path_ini: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\haruyo_koi\haruyo_koi.ini
-  mode: OtoIni(romaji_cv) -> Label(mono)
-path_lab: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\haruyo_koi\haruyo_koi.lab
 --------------------------------------------------------------------------------
 path_ust: C:\Users\CrazY\Documents\GitHub\utau-namineritsu-singing\data\hato\hato.ust
 path_vb : D:\UTAU/voice/波音リツ・キレ音源Ver1.0（歌唱DB用改変版）
