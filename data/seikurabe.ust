@@ -1918,4 +1918,8 @@ PBW=100
 PBY=0
 PBM=,
 Envelope=78,0,0,100,100,100,100,%,35
+[#0165]
+Length=480
+Lyric=R
+NoteNum=60
 [#TRACKEND]
