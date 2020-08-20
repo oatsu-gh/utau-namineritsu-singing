@@ -1,12 +1,12 @@
 import os
-
-from glob import glob
-from os.path import join, basename, splitext
-from nnmnkwii.io import hts
-from fastdtw import fastdtw
 import sys
+from glob import glob
+from os.path import basename, join, splitext
+
 import config
-from util import prep_ph2num, ph2numeric, fix_mono_lab_after_align
+from fastdtw import fastdtw
+from nnmnkwii.io import hts
+from util import fix_mono_lab_after_align, ph2numeric, prep_ph2num
 
 # Get rough alignment between
 # 1) mono-phone labels of singing voice database and
@@ -30,8 +30,8 @@ for (path1, path2) in zip(sinsy_files, mono_label_files):
         continue
 
     # align two labels roughly based on the phoneme labels
-    d, path = fastdtw(ph2numeric(lab_sinsy.contexts,ph2num),
-        ph2numeric(lab_mono_label.contexts, ph2num), radius=len(lab_mono_label))
+    d, path = fastdtw(ph2numeric(lab_sinsy.contexts, ph2num),
+                      ph2numeric(lab_mono_label.contexts, ph2num), radius=len(lab_mono_label))
 
     # Edit sinsy labels with hand-annontated aligments
     for x, y in path:

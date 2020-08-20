@@ -1,0 +1,1 @@
+pysinsy で MusicXML から生成した label

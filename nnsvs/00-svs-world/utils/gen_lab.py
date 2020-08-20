@@ -1,10 +1,10 @@
-import pysinsy
 import os
-
 from glob import glob
-from os.path import join, basename, splitext
-from nnmnkwii.io import hts
+from os.path import basename, join, splitext
+
 import config
+import pysinsy
+from nnmnkwii.io import hts
 from util import merge_sil
 
 sinsy = pysinsy.sinsy.Sinsy()
@@ -53,12 +53,13 @@ for name in ["sinsy_mono", "sinsy_full", "mono_label"]:
 
         # Check if rounding is done property
         if name == "mono_label":
-            for i in range(len(lab)-1):
-                if lab.end_times[i] != lab.start_times[i+1]:
+            for i in range(len(lab) - 1):
+                if lab.end_times[i] != lab.start_times[i + 1]:
                     print(path)
                     print(i, lab[i])
-                    print(i+1, lab[i+1])
-                    import ipdb; ipdb.set_trace()
+                    print(i + 1, lab[i + 1])
+                    import ipdb
+                    ipdb.set_trace()
 
         with open(join(dst_dir, name), "w") as of:
             of.write(str(lab))

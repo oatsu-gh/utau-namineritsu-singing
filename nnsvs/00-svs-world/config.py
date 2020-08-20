@@ -1,19 +1,19 @@
 # Common settings
 from os import getcwd
-from os.path import join, expanduser
+from os.path import expanduser, join
 
 # Output directory
 # All the igenerated labels, intermediate files, and segmented wav files
 # will be saved in the following directory
-out_dir = "utau-namineritsu-singing"
+out_dir = 'output'
 
 # PLEASE CHANGE THE PATH BASED ON YOUR ENVIRONMENT
-db_root = join(expanduser("~"), "data/utau-namineritsu-singing/")
+db_root = join(expanduser('~'), 'data/utau-namineritsu-singing/')
 
 # Sinsy dictionary directory
-# OFUTON_P_UTAGOE_DB contains the unvoiced vowels ("I").
+# OFUTON_P_UTAGOE_DB contains the unvoiced vowels ('I').
 # The dictionary files contains this recipe are modified for this purpose.
-sinsy_dic = join(getcwd(), "dic")
+sinsy_dic = join(getcwd(), 'dic')
 
 # Song segmentation by silence durations.
 # TODO: would be better to split songs by phrasal information in the musical scores
@@ -38,13 +38,4 @@ offset_correction_threshold = 0.01
 # Time-lag constraints to filter outliers
 timelag_allowed_range = (-20, 19)
 timelag_allowed_range_rest = (-40, 39)
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
-db_root = "/home/crazy-nnsvs/data/utau-namineritsu-singing/"
+db_root = '/home/crazy-nnsvs/data/utau-namineritsu-singing/'

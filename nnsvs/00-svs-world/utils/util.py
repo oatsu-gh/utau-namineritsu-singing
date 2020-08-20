@@ -1,9 +1,12 @@
 # coding: utf-8
 from os.path import join
+
 import jaconv
 import numpy as np
+
 import config
 from nnmnkwii.io import hts
+
 
 def merge_sil(lab):
     N = len(lab)
@@ -12,12 +15,13 @@ def merge_sil(lab):
     is_full_context = "@" in lab[0][-1]
     for i in range(1, N):
         if (is_full_context and "-sil" in f[-1][-1] and "-sil" in lab[i][-1]) \
-            or (not is_full_context and f[-1][-1] == "sil" and lab[i][-1] == "sil"):
+                or (not is_full_context and f[-1][-1] == "sil" and lab[i][-1] == "sil"):
             # extend sil
             f.end_times[-1] = lab[i][1]
         else:
             f.append(lab[i], strict=False)
     return f
+
 
 def _is_silence(l):
     is_full_context = "@" in l
@@ -31,7 +35,7 @@ def _is_silence(l):
 def trim_long_sil_and_pau(lab, return_indices=False, threshold=10.0):
     forward = 0
     while True:
-        d  = (lab.end_times[forward] - lab.start_times[forward]) * 1e-7
+        d = (lab.end_times[forward] - lab.start_times[forward]) * 1e-7
         if _is_silence(lab.contexts[forward]) and d > threshold:
             forward += 1
         else:
@@ -39,22 +43,22 @@ def trim_long_sil_and_pau(lab, return_indices=False, threshold=10.0):
 
     backward = len(lab) - 1
     while True:
-        d  = (lab.end_times[backward] - lab.start_times[backward]) * 1e-7
+        d = (lab.end_times[backward] - lab.start_times[backward]) * 1e-7
         if _is_silence(lab.contexts[backward]) and d > threshold:
             backward -= 1
         else:
             break
 
     if return_indices:
-        return lab[forward:backward+1], forward, backward
+        return lab[forward:backward + 1], forward, backward
     else:
-        return lab[forward:backward+1]
+        return lab[forward:backward + 1]
 
 
 def compute_nosil_duration(lab, threshold=5.0):
     is_full_context = "@" in lab[0][-1]
     sum_d = 0
-    for s,e,l in lab:
+    for s, e, l in lab:
         d = (e - s) * 1e-7
         if is_full_context:
             is_silence = ("-sil" in l or "-pau" in l)
@@ -68,7 +72,7 @@ def compute_nosil_duration(lab, threshold=5.0):
 
 
 def segment_labels(lab, strict=True, threshold=1.0, min_duration=5.0,
-        force_split_threshold=10.0):
+                   force_split_threshold=10.0):
     """Segment labels based on sil/pau
 
     Example:
@@ -86,7 +90,7 @@ def segment_labels(lab, strict=True, threshold=1.0, min_duration=5.0,
     large_silence_detected = False
 
     for idx, (s, e, l) in enumerate(lab):
-        d = (e-s) * 1e-7
+        d = (e - s) * 1e-7
         is_silence = _is_silence(l)
 
         if len(seg) > 0:
@@ -98,7 +102,7 @@ def segment_labels(lab, strict=True, threshold=1.0, min_duration=5.0,
         # let's try to split
         # if we find large silence, force split regardless min_duration
         if (d > force_split_threshold) or (is_silence and d > threshold and seg_d > min_duration):
-            if idx == len(lab)-1:
+            if idx == len(lab) - 1:
                 continue
             elif len(seg) > 0:
                 if d > force_split_threshold:
@@ -129,15 +133,15 @@ def segment_labels(lab, strict=True, threshold=1.0, min_duration=5.0,
     segments2 = []
     start_indices_new, end_indices_new = [], []
     for s, e in zip(start_indices, end_indices):
-        seg = lab[s:e+1]
+        seg = lab[s:e + 1]
 
         # ignore "sil" or "pau" only segment
-        if len(seg) ==1 and _is_silence(seg.contexts[0]):
+        if len(seg) == 1 and _is_silence(seg.contexts[0]):
             continue
         seg2, forward, backward = trim_long_sil_and_pau(seg, return_indices=True)
 
-        start_indices_new.append(s+forward)
-        end_indices_new.append(s+backward)
+        start_indices_new.append(s + forward)
+        end_indices_new.append(s + backward)
 
         segments2.append(seg2)
 
@@ -194,14 +198,14 @@ def trim_sil_and_pau(lab, return_indices=False):
     while "-sil" in lab.contexts[forward] or "-pau" in lab.contexts[forward]:
         forward += 1
 
-    backward = len(lab)-1
+    backward = len(lab) - 1
     while "-sil" in lab.contexts[backward] or "-pau" in lab.contexts[backward]:
         backward -= 1
 
     if return_indices:
-        return lab[forward:backward+1], forward, backward
+        return lab[forward:backward + 1], forward, backward
     else:
-        return lab[forward:backward+1]
+        return lab[forward:backward + 1]
 
 
 def get_note_indices(lab):
@@ -215,10 +219,12 @@ def get_note_indices(lab):
             pass
     return note_indices
 
+
 def fix_mono_lab_before_align(lab):
     # There is nothing to do
     return lab
-              
+
+
 def fix_mono_lab_after_align(lab):
     f = hts.HTSLabelFile()
     f.append(lab[0])
@@ -230,6 +236,6 @@ def fix_mono_lab_after_align(lab):
             d = round((lab.end_times[i] - lab.start_times[i]) / 2)
             f.end_times[-1] = f.start_times[-1] + d
             f.append((f.end_times[-1], lab.end_times[i], lab.contexts[i]))
-        else:        
+        else:
             f.append(lab[i], strict=False)
     return(f)
