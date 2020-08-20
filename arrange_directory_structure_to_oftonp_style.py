@@ -14,8 +14,18 @@ from shutil import copy2
 def main():
     path_dir_in = input('path_dir_in: ')
     path_dir_out = input('path_dir_out: ')
-    l_lab_path = glob(f'{path_dir_in}/*.lab')
-    l_musicname = [os.path.splitext(os.path.basename(path))[0] for path in l_lab_path]
+    l = glob(f'{path_dir_in}/*.lab')
+    if len(l) == 0:
+        l = glob(f'{path_dir_in}/*.musicxml')
+        if len(l) == 0:
+            l = glob(f'{path_dir_in}/*.xml')
+            if len(l) == 0:
+                l = glob(f'{path_dir_in}/*.ust')
+                if len(l) == 0:
+                    l = glob(f'{path_dir_in}/*.lab')
+                    if len(l) == 0:
+                        l = glob(f'{path_dir_in}/*.lab')
+    l_musicname = [os.path.splitext(os.path.basename(path))[0] for path in l]
 
     for musicname in l_musicname:
         os.makedirs(f'{path_dir_out}/{musicname}', exist_ok=True)

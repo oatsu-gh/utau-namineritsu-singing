@@ -4,3 +4,4 @@ test
 *.midi
 *.cache*
 *__pycache__*
+*setParam-backup.ini

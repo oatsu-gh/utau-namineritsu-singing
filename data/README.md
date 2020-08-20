@@ -6,8 +6,9 @@
 
 - music_name.xml
   - MusicXML file of the music
-  - Converted from CCS or MIDI, with CeVIO CreativeStudio 7
-
+  - ~~Converted from CCS or MIDI, with CeVIO CreativeStudio 7~~
+- Converted from MIDI with MuseScore
+  
 - music_name.lab
   - Mono-label file of the music
   - Converted from UST with utau2db

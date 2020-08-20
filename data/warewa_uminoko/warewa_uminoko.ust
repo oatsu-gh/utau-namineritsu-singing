@@ -4,7 +4,7 @@ UST Version1.2
 Tempo=126.00
 Tracks=1
 ProjectName=
-VoiceDir=%VOICE%波音リツ・キレ音源Ver1.0
+VoiceDir=%VOICE%波音リツ・キレ音源Ver1.0（歌唱DB用改変版）
 OutFile=
 CacheDir=
 Tool1=wavtool4vcv.exe
