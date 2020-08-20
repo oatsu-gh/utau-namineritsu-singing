@@ -3,3 +3,4 @@ test
 *.mid
 *.midi
 *.cache*
+*__pycache__*
