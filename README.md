@@ -69,6 +69,16 @@ UTAU音源「波音リツ」の音声で作った試験用歌唱データベー�
   8. 各USTから音声ファイルを出力する。このとき、音声ファイル名がUSTファイル名と一致するようにする。
   9. [utau2db](https://github.com/oatsu-gh/utau2db) でUSTファイルからINIファイルおよびLABファイルを生成する。この際、子音の長さは原音設定ファイルより取得している。
 
+## 音域など
+
+- 曲数：40
+- BPM：60 ~ 128
+  - UST より [bpm_and_raznge_from_ust](https://github.com/oatsu-gh/oto2lab/tree/master/tool/bpm_and_range_from_ust) を使って算出
+- 音域：A3 (220 Hz) ~ E5 (659.255 Hz)
+  - UST より [bpm_and_raznge_from_ust](https://github.com/oatsu-gh/oto2lab/tree/master/tool/bpm_and_range_from_ust) を使って算出
+- 有音発声時間：2173 s
+  - LAB より [voiced_part_length_from_lab](https://github.com/oatsu-gh/oto2lab/tree/master/tool/voiced_part_length_from_lab) を使って算出
+
 ## 展望
 
 - UTAU音源の oto.ini のオーバーラップ値を改変して子音開始位置にすれば、音素ラベリングをスキップできる。（moresampler の原音設定ポリシーがちょうどよさそう）
