@@ -26,6 +26,8 @@ UTAU音源「波音リツ」の音声で作った試験用歌唱データベー�
   - CeVIOを利用してMIDIから生成
 - WAV
   - UTAUで生成
+    - wavtool64
+    - doppeltler009
   - 16bit / 44.1kHz, モノラル
 - INI（setParam）
   - utau2dbを利用してUSTから生成
