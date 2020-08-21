@@ -41,7 +41,7 @@ for d in [lab_align_dst_dir, lab_score_dst_dir]:
 
 
 base_files = sorted(glob(join(config.out_dir, "full_dtw", "*.lab")))
-    
+
 print("Prepare data for time-lag models")
 for base in tqdm(base_files):
     utt_id = splitext(basename(base))[0]
@@ -75,6 +75,8 @@ for base in tqdm(base_files):
     while True:
         lab_align_path = join(full_align_dir, f"{utt_id}_seg{seg_idx}.lab")
         lab_score_path = join(full_score_dir, f"{utt_id}_seg{seg_idx}.lab")
+        print(f'finalize_lab.py: lab_align_path: {lab_align_path}')
+        print(f'finalize_lab.py: lab_score_path: {lab_score_path}')
         name = basename(lab_align_path)
         assert seg_idx > 0 or exists(lab_align_path)
         if not exists(lab_align_path):
@@ -196,14 +198,14 @@ for base in tqdm(base_files):
     if "shoujoujino_tanukibayashi" in wav_path and exists(wav_path) == False:
         wav_path = join(config.db_root, "shoujoujino_tanikibayashi", f"{utt_id}.wav")
 
-#    print(wav_path)   
+#    print(wav_path)
     assert exists(wav_path)
     # sr, wave = wavfile.read(wav_path)
     wav, sr = librosa.load(wav_path, sr=48000)
 
     # gain normalize
     wav = wav / wav.max() * 0.99
-    
+
     seg_idx = 0
     while True:
         lab_align_path = join(full_align_dir, f"{utt_id}_seg{seg_idx}.lab")
