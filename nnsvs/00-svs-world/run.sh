@@ -1,11 +1,11 @@
 #!/bin/bash
 
 script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
-NNSVS_ROOT=$script_dir/../../../
+NNSVS_ROOT=$HOME/nnsvs
 
 # Directory
 # **CHANGE** this to your database path
-db_root=$HOME/data/utau-namineritsu-singing/
+db_root=$HOME/data/utau-namineritsu-singing
 
 spk="utau_ritsu"
 
