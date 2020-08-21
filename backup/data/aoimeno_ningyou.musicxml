@@ -1983,12 +1983,12 @@
           </lyric>
         </note>
       </measure>
-    <measure number="22" width="485.68">
+    <measure number="22" width="378.26">
       <print new-system="yes">
         <system-layout>
           <system-margins>
             <left-margin>-0.00</left-margin>
-            <right-margin>591.48</right-margin>
+            <right-margin>499.48</right-margin>
             </system-margins>
           <system-distance>150.00</system-distance>
           </system-layout>
@@ -2008,7 +2008,7 @@
           <text>や</text>
           </lyric>
         </note>
-      <note default-x="197.09" default-y="-15.00" dynamics="111.11">
+      <note default-x="167.78" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -2024,7 +2024,7 @@
           <text>あっ</text>
           </lyric>
         </note>
-      <note default-x="257.53" default-y="-30.00" dynamics="111.11">
+      <note default-x="213.19" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -2041,7 +2041,7 @@
           <text>と</text>
           </lyric>
         </note>
-      <note default-x="317.96" default-y="-35.00" dynamics="111.11">
+      <note default-x="258.60" default-y="-35.00" dynamics="111.11">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -2057,7 +2057,7 @@
           <text>く</text>
           </lyric>
         </note>
-      <note default-x="378.39" default-y="-40.00" dynamics="111.11">
+      <note default-x="304.01" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -2070,6 +2070,13 @@
           <syllabic>single</syllabic>
           <text>れ</text>
           </lyric>
+        </note>
+      </measure>
+    <measure number="23" width="199.42">
+      <note>
+        <rest measure="yes"/>
+        <duration>16</duration>
+        <voice>1</voice>
         </note>
       <barline location="right">
         <bar-style>light-heavy</bar-style>
