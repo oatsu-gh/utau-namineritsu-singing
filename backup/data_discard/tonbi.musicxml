@@ -4,7 +4,7 @@
   <identification>
     <encoding>
       <software>MuseScore 3.5.0</software>
-      <encoding-date>2020-08-21</encoding-date>
+      <encoding-date>2020-08-22</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="yes" value="yes"/>

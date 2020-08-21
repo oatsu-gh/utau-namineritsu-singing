@@ -2,6 +2,8 @@ compare
 test
 *.mid
 *.midi
+*.mscbackup
+*.setParam-Scache
 *.cache*
 *__pycache__*
 *setParam-backup.ini

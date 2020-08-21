@@ -6,16 +6,27 @@
 
 ## 音素ラベルの発声時間が負だった
 
-- antagata_dokosa.lab
+- antagata_dokosa
   - 154166666 153905555 a
-- issunboushi.lab
+- issunboushi
   - 328500000 328150000 u
-- momotarou.lab
+- momotarou
   - 36160714 36099999 u
-- tonbi.lab
+- tonbi
   - 259375000 258787500 N
   - 309375000 308787500 N
   - 709375000 708787500 N
   - 759375000 758787500 N
 - urashima_tarou.lab
   - 244500000 244500000 o
+
+## NNSVS でなんか失敗する
+
+- amefuri
+  - ValueError: start_time (66350000) must be equal to the last end_time (57700000).
+  - 
+    XMLから生成したラベルの「かあさんが」の「が」がおかしい
+    51900000 56250000 a
+    56250000 57200000 N
+    57200000 **57700000** g
+    **66350000** 68600000 a
