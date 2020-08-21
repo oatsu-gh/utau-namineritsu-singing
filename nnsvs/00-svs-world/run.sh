@@ -9,9 +9,9 @@ db_root=$PWD/../../data
 
 # voice bank name
 spk="utau_ritsu"
-# Max frequency:659.255 Hz (estimated from UST)
+# Max frequency:659.255 Hz (E5, estimated from UST)
 f0_ceil=700
-# Min frequency: 220 Hz (estimated from UST)
+# Min frequency: 220 Hz (A3, estimated from UST)
 f0_floor=170
 
 dumpdir=dump
