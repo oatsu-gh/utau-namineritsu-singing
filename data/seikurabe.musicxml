@@ -53,18 +53,18 @@
       </score-part>
     </part-list>
   <part id="P1">
-    <measure number="1" width="110.13">
+    <measure number="1" width="100.96">
       <print>
         <system-layout>
           <system-margins>
-            <left-margin>0.00</left-margin>
+            <left-margin>-0.00</left-margin>
             <right-margin>-0.00</right-margin>
             </system-margins>
-          <top-system-distance>70.00</top-system-distance>
+          <top-system-distance>170.00</top-system-distance>
           </system-layout>
         </print>
       <attributes>
-        <divisions>4</divisions>
+        <divisions>2</divisions>
         <key>
           <fifths>0</fifths>
           </key>
@@ -79,7 +79,7 @@
         </attributes>
       <direction placement="above">
         <direction-type>
-          <metronome parentheses="no" default-x="-35.96" relative-y="20.00">
+          <metronome parentheses="no" default-x="-25.96" relative-y="20.00">
             <beat-unit>quarter</beat-unit>
             <per-minute>96</per-minute>
             </metronome>
@@ -88,24 +88,24 @@
         </direction>
       <note>
         <rest measure="yes"/>
-        <duration>12</duration>
+        <duration>6</duration>
         <voice>1</voice>
         </note>
       </measure>
-    <measure number="2" width="54.26">
+    <measure number="2" width="55.09">
       <note>
         <rest measure="yes"/>
-        <duration>12</duration>
+        <duration>6</duration>
         <voice>1</voice>
         </note>
       </measure>
-    <measure number="3" width="113.21">
+    <measure number="3" width="114.05">
       <note default-x="13.80" default-y="-50.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -120,7 +120,7 @@
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -135,7 +135,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -144,12 +144,12 @@
           <text>ら</text>
           </lyric>
         </note>
-      <note default-x="84.07" default-y="-40.00" dynamics="111.11">
+      <note default-x="84.49" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -159,13 +159,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="4" width="105.77">
+    <measure number="4" width="106.60">
       <note default-x="10.42" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -175,12 +175,12 @@
           <text>き</text>
           </lyric>
         </note>
-      <note default-x="28.29" default-y="-25.00" dynamics="111.11">
+      <note default-x="28.49" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -190,12 +190,12 @@
           <text>い</text>
           </lyric>
         </note>
-      <note default-x="46.99" default-y="-30.00" dynamics="111.11">
+      <note default-x="47.19" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -204,12 +204,12 @@
           <text>ず</text>
           </lyric>
         </note>
-      <note default-x="75.58" default-y="-40.00" dynamics="111.11">
+      <note default-x="76.09" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -219,13 +219,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="5" width="96.06">
+    <measure number="5" width="96.89">
       <note default-x="11.62" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -240,7 +240,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -250,12 +250,12 @@
           <text>と</text>
           </lyric>
         </note>
-      <note default-x="44.38" default-y="-15.00" dynamics="111.11">
+      <note default-x="44.57" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -264,12 +264,12 @@
           <text>と</text>
           </lyric>
         </note>
-      <note default-x="69.42" default-y="-25.00" dynamics="111.11">
+      <note default-x="69.93" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -279,13 +279,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="6" width="59.87">
+    <measure number="6" width="60.71">
       <note default-x="11.26" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -296,18 +296,18 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
       </measure>
-    <measure number="7" width="84.83">
+    <measure number="7" width="85.67">
       <note default-x="11.22" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -316,12 +316,12 @@
           <text>ご</text>
           </lyric>
         </note>
-      <note default-x="35.03" default-y="-25.00" dynamics="111.11">
+      <note default-x="35.45" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -330,12 +330,12 @@
           <text>が</text>
           </lyric>
         </note>
-      <note default-x="58.85" default-y="-15.00" dynamics="111.11">
+      <note default-x="59.68" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -345,13 +345,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="8" width="106.11">
+    <measure number="8" width="106.94">
       <note default-x="11.22" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -366,7 +366,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -381,7 +381,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -390,12 +390,12 @@
           <text>か</text>
           </lyric>
         </note>
-      <note default-x="76.26" default-y="-50.00" dynamics="111.11">
+      <note default-x="76.68" default-y="-50.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -405,13 +405,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="9" width="98.53">
+    <measure number="9" width="99.36">
       <note default-x="12.02" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -426,7 +426,7 @@
           <step>F</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -436,12 +436,12 @@
           <text>い</text>
           </lyric>
         </note>
-      <note default-x="46.63" default-y="-40.00" dynamics="111.11">
+      <note default-x="46.83" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -450,12 +450,12 @@
           <text>く</text>
           </lyric>
         </note>
-      <note default-x="71.78" default-y="-45.00" dynamics="111.11">
+      <note default-x="72.30" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -465,13 +465,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="10" width="62.42">
+    <measure number="10" width="63.25">
       <note default-x="13.80" default-y="-50.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -482,18 +482,18 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
       </measure>
-    <measure number="11" width="78.48">
+    <measure number="11" width="79.32">
       <note default-x="10.62" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -502,12 +502,12 @@
           <text>ち</text>
           </lyric>
         </note>
-      <note default-x="31.96" default-y="-15.00" dynamics="111.11">
+      <note default-x="32.38" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -516,12 +516,12 @@
           <text>ま</text>
           </lyric>
         </note>
-      <note default-x="53.30" default-y="-15.00" dynamics="111.11">
+      <note default-x="54.13" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -531,13 +531,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="12" width="107.49">
+    <measure number="12" width="108.32">
       <note default-x="11.22" default-y="-10.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>5</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>down</stem>
@@ -552,7 +552,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>down</stem>
@@ -567,7 +567,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -576,12 +576,12 @@
           <text>た</text>
           </lyric>
         </note>
-      <note default-x="77.45" default-y="-30.00" dynamics="111.11">
+      <note default-x="77.87" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -591,11 +591,11 @@
           </lyric>
         </note>
       </measure>
-    <measure number="13" width="154.12">
+    <measure number="13" width="155.83">
       <print new-system="yes">
         <system-layout>
           <system-margins>
-            <left-margin>0.00</left-margin>
+            <left-margin>-0.00</left-margin>
             <right-margin>0.00</right-margin>
             </system-margins>
           <system-distance>150.00</system-distance>
@@ -606,7 +606,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -616,12 +616,12 @@
           <text>に</text>
           </lyric>
         </note>
-      <note default-x="76.27" default-y="-45.00" dynamics="111.11">
+      <note default-x="76.41" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -631,12 +631,12 @@
           <text>い</text>
           </lyric>
         </note>
-      <note default-x="95.74" default-y="-50.00" dynamics="111.11">
+      <note default-x="95.88" default-y="-50.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -645,12 +645,12 @@
           <text>さ</text>
           </lyric>
         </note>
-      <note default-x="124.13" default-y="-45.00" dynamics="111.11">
+      <note default-x="125.06" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -660,13 +660,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="14" width="59.80">
+    <measure number="14" width="61.51">
       <note default-x="11.66" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -677,18 +677,18 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
       </measure>
-    <measure number="15" width="130.99">
+    <measure number="15" width="123.39">
       <note default-x="11.62" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -698,12 +698,12 @@
           <text>は</text>
           </lyric>
         </note>
-      <note default-x="33.62" default-y="-25.00" dynamics="111.11">
+      <note default-x="31.68" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -713,44 +713,26 @@
           <text>か</text>
           </lyric>
         </note>
-      <note default-x="55.61" default-y="-30.00" dynamics="111.11">
+      <note default-x="57.58" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>3</duration>
+        <duration>2</duration>
         <voice>1</voice>
-        <type>eighth</type>
-        <dot/>
+        <type>quarter</type>
         <stem>up</stem>
-        <beam number="1">begin</beam>
         <lyric number="1" default-x="6.58" default-y="-53.60" relative-y="-30.00">
           <syllabic>single</syllabic>
-          <text>あ</text>
+          <text>あっ</text>
           </lyric>
         </note>
-      <note default-x="82.44" default-y="-30.00" dynamics="1.11">
+      <note default-x="89.68" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>1</duration>
-        <voice>1</voice>
-        <type>16th</type>
-        <stem>up</stem>
-        <beam number="1">end</beam>
-        <beam number="2">backward hook</beam>
-        <lyric number="1" default-x="6.58" default-y="-53.60" relative-y="-30.00">
-          <syllabic>single</syllabic>
-          <text>っ</text>
-          </lyric>
-        </note>
-      <note default-x="99.14" default-y="-30.00" dynamics="111.11">
-        <pitch>
-          <step>G</step>
-          <octave>4</octave>
-          </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -760,13 +742,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="16" width="80.38">
+    <measure number="16" width="82.09">
       <note default-x="10.00" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -775,12 +757,12 @@
           <text>く</text>
           </lyric>
         </note>
-      <note default-x="32.20" default-y="-15.00" dynamics="111.11">
+      <note default-x="33.06" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -789,12 +771,12 @@
           <text>れ</text>
           </lyric>
         </note>
-      <note default-x="54.40" default-y="-15.00" dynamics="111.11">
+      <note default-x="56.11" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -804,13 +786,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="17" width="105.97">
+    <measure number="17" width="107.69">
       <note default-x="12.02" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -825,7 +807,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -840,7 +822,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -849,12 +831,12 @@
           <text>の</text>
           </lyric>
         </note>
-      <note default-x="76.90" default-y="-40.00" dynamics="111.11">
+      <note default-x="77.75" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -864,13 +846,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="18" width="61.94">
+    <measure number="18" width="63.65">
       <note default-x="13.80" default-y="-50.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -881,18 +863,18 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
       </measure>
-    <measure number="19" width="78.02">
+    <measure number="19" width="79.73">
       <note default-x="10.42" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -901,12 +883,12 @@
           <text>き</text>
           </lyric>
         </note>
-      <note default-x="31.84" default-y="-45.00" dynamics="111.11">
+      <note default-x="32.69" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -915,12 +897,12 @@
           <text>の</text>
           </lyric>
         </note>
-      <note default-x="53.25" default-y="-45.00" dynamics="111.11">
+      <note default-x="54.96" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -930,13 +912,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="20" width="112.43">
+    <measure number="20" width="114.14">
       <note default-x="10.00" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -946,12 +928,12 @@
           <text>く</text>
           </lyric>
         </note>
-      <note default-x="29.39" default-y="-35.00" dynamics="111.11">
+      <note default-x="29.72" default-y="-35.00" dynamics="111.11">
         <pitch>
           <step>F</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -961,12 +943,12 @@
           <text>ら</text>
           </lyric>
         </note>
-      <note default-x="48.78" default-y="-40.00" dynamics="111.11">
+      <note default-x="49.44" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -975,12 +957,12 @@
           <text>べ</text>
           </lyric>
         </note>
-      <note default-x="79.80" default-y="-45.00" dynamics="111.11">
+      <note default-x="80.99" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -990,13 +972,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="21" width="128.07">
+    <measure number="21" width="129.78">
       <note default-x="13.80" default-y="-50.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1006,12 +988,12 @@
           <text>な</text>
           </lyric>
         </note>
-      <note default-x="33.27" default-y="-45.00" dynamics="111.11">
+      <note default-x="33.28" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1021,12 +1003,12 @@
           <text>ん</text>
           </lyric>
         </note>
-      <note default-x="52.37" default-y="-40.00" dynamics="111.11">
+      <note default-x="52.76" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1035,12 +1017,12 @@
           <text>の</text>
           </lyric>
         </note>
-      <note default-x="82.72" default-y="-45.00" dynamics="111.11">
+      <note default-x="83.92" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1050,12 +1032,12 @@
           <text>こ</text>
           </lyric>
         </note>
-      <note default-x="101.69" default-y="-40.00" dynamics="111.11">
+      <note default-x="103.40" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1066,13 +1048,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="22" width="58.14">
+    <measure number="22" width="59.85">
       <note default-x="10.00" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -1083,18 +1065,18 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
       </measure>
-    <measure number="23" width="107.29">
+    <measure number="23" width="99.50">
       <note default-x="12.02" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1103,44 +1085,26 @@
           <text>や</text>
           </lyric>
         </note>
-      <note default-x="39.04" default-y="-30.00" dynamics="111.11">
+      <note default-x="40.64" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>3</duration>
+        <duration>2</duration>
         <voice>1</voice>
-        <type>eighth</type>
-        <dot/>
+        <type>quarter</type>
         <stem>up</stem>
-        <beam number="1">begin</beam>
         <lyric number="1" default-x="6.58" default-y="-53.60" relative-y="-30.00">
           <syllabic>single</syllabic>
-          <text>あ</text>
+          <text>あっ</text>
           </lyric>
         </note>
-      <note default-x="63.00" default-y="-30.00" dynamics="1.11">
-        <pitch>
-          <step>G</step>
-          <octave>4</octave>
-          </pitch>
-        <duration>1</duration>
-        <voice>1</voice>
-        <type>16th</type>
-        <stem>up</stem>
-        <beam number="1">end</beam>
-        <beam number="2">backward hook</beam>
-        <lyric number="1" default-x="6.58" default-y="-53.60" relative-y="-30.00">
-          <syllabic>single</syllabic>
-          <text>っ</text>
-          </lyric>
-        </note>
-      <note default-x="78.67" default-y="-25.00" dynamics="111.11">
+      <note default-x="69.27" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1154,8 +1118,8 @@
       <print new-system="yes">
         <system-layout>
           <system-margins>
-            <left-margin>0.00</left-margin>
-            <right-margin>-0.00</right-margin>
+            <left-margin>-0.00</left-margin>
+            <right-margin>0.00</right-margin>
             </system-margins>
           <system-distance>150.00</system-distance>
           </system-layout>
@@ -1165,7 +1129,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>down</stem>
@@ -1180,7 +1144,7 @@
           <step>D</step>
           <octave>5</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>down</stem>
@@ -1195,7 +1159,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -1209,7 +1173,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1225,7 +1189,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1240,7 +1204,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1255,7 +1219,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1269,7 +1233,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1284,7 +1248,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1301,7 +1265,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>down</stem>
@@ -1312,7 +1276,7 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
@@ -1320,14 +1284,14 @@
     <measure number="27" width="59.86">
       <note>
         <rest measure="yes"/>
-        <duration>12</duration>
+        <duration>6</duration>
         <voice>1</voice>
         </note>
       </measure>
     <measure number="28" width="59.86">
       <note>
         <rest measure="yes"/>
-        <duration>12</duration>
+        <duration>6</duration>
         <voice>1</voice>
         </note>
       </measure>
@@ -1337,7 +1301,7 @@
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1352,7 +1316,7 @@
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1367,7 +1331,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1381,7 +1345,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1397,7 +1361,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1412,7 +1376,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1427,7 +1391,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1441,7 +1405,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1457,7 +1421,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1472,7 +1436,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1487,7 +1451,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -1501,7 +1465,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1517,7 +1481,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -1528,7 +1492,7 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
@@ -1539,7 +1503,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -1553,7 +1517,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1567,7 +1531,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -1583,7 +1547,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1598,7 +1562,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1613,7 +1577,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1627,7 +1591,7 @@
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1641,7 +1605,7 @@
       <print new-system="yes">
         <system-layout>
           <system-margins>
-            <left-margin>0.00</left-margin>
+            <left-margin>-0.00</left-margin>
             <right-margin>-0.00</right-margin>
             </system-margins>
           <system-distance>150.00</system-distance>
@@ -1652,7 +1616,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1667,7 +1631,7 @@
           <step>F</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1682,7 +1646,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1696,7 +1660,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1712,7 +1676,7 @@
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -1723,7 +1687,7 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
@@ -1734,7 +1698,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -1748,7 +1712,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -1762,7 +1726,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -1778,7 +1742,7 @@
           <step>D</step>
           <octave>5</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>down</stem>
@@ -1793,7 +1757,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>down</stem>
@@ -1808,7 +1772,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1822,7 +1786,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1838,7 +1802,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1853,7 +1817,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1868,7 +1832,7 @@
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1882,7 +1846,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1898,7 +1862,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -1909,7 +1873,7 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
@@ -1920,7 +1884,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1935,7 +1899,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -1950,7 +1914,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1964,7 +1928,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1980,7 +1944,7 @@
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -1994,7 +1958,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -2008,7 +1972,7 @@
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -2024,7 +1988,7 @@
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2039,7 +2003,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2054,7 +2018,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2068,7 +2032,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2084,7 +2048,7 @@
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -2095,7 +2059,7 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
@@ -2106,7 +2070,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2120,7 +2084,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2134,7 +2098,7 @@
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2144,11 +2108,11 @@
           </lyric>
         </note>
       </measure>
-    <measure number="46" width="193.30">
+    <measure number="46" width="193.51">
       <print new-system="yes">
         <system-layout>
           <system-margins>
-            <left-margin>0.00</left-margin>
+            <left-margin>-0.00</left-margin>
             <right-margin>0.00</right-margin>
             </system-margins>
           <system-distance>150.00</system-distance>
@@ -2159,7 +2123,7 @@
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2169,12 +2133,12 @@
           <text>ぼ</text>
           </lyric>
         </note>
-      <note default-x="83.85" default-y="-35.00" dynamics="111.11">
+      <note default-x="83.89" default-y="-35.00" dynamics="111.11">
         <pitch>
           <step>F</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2184,12 +2148,12 @@
           <text>う</text>
           </lyric>
         </note>
-      <note default-x="109.53" default-y="-40.00" dynamics="111.11">
+      <note default-x="109.61" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2198,12 +2162,12 @@
           <text>し</text>
           </lyric>
         </note>
-      <note default-x="150.61" default-y="-45.00" dynamics="111.11">
+      <note default-x="150.76" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2213,13 +2177,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="47" width="177.10">
+    <measure number="47" width="177.31">
       <note default-x="13.80" default-y="-50.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2229,12 +2193,12 @@
           <text>ぬ</text>
           </lyric>
         </note>
-      <note default-x="42.67" default-y="-45.00" dynamics="111.11">
+      <note default-x="42.71" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2244,12 +2208,12 @@
           <text>い</text>
           </lyric>
         </note>
-      <note default-x="71.55" default-y="-40.00" dynamics="111.11">
+      <note default-x="71.62" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2258,12 +2222,12 @@
           <text>で</text>
           </lyric>
         </note>
-      <note default-x="117.75" default-y="-45.00" dynamics="111.11">
+      <note default-x="117.88" default-y="-45.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2273,12 +2237,12 @@
           <text>さ</text>
           </lyric>
         </note>
-      <note default-x="146.62" default-y="-40.00" dynamics="111.11">
+      <note default-x="146.80" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2289,13 +2253,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="48" width="109.17">
+    <measure number="48" width="109.38">
       <note default-x="10.86" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>up</stem>
@@ -2306,18 +2270,18 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
       </measure>
-    <measure number="49" width="133.61">
+    <measure number="49" width="133.83">
       <note default-x="11.22" default-y="-40.00" dynamics="111.11">
         <pitch>
           <step>E</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2326,12 +2290,12 @@
           <text>い</text>
           </lyric>
         </note>
-      <note default-x="51.48" default-y="-30.00" dynamics="111.11">
+      <note default-x="51.55" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2340,12 +2304,12 @@
           <text>ち</text>
           </lyric>
         </note>
-      <note default-x="91.75" default-y="-25.00" dynamics="111.11">
+      <note default-x="91.89" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2355,13 +2319,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="50" width="171.19">
+    <measure number="50" width="169.91">
       <note default-x="12.02" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>down</stem>
@@ -2371,44 +2335,27 @@
           <text>や</text>
           </lyric>
         </note>
-      <note default-x="43.53" default-y="-10.00" dynamics="111.11">
+      <note default-x="42.07" default-y="-10.00" dynamics="111.11">
         <pitch>
           <step>D</step>
           <octave>5</octave>
           </pitch>
         <duration>1</duration>
         <voice>1</voice>
-        <type>16th</type>
-        <stem>down</stem>
-        <beam number="1">continue</beam>
-        <beam number="2">begin</beam>
-        <lyric number="1" default-x="6.58" default-y="-52.80" relative-y="-30.00">
-          <syllabic>single</syllabic>
-          <text>あ</text>
-          </lyric>
-        </note>
-      <note default-x="63.23" default-y="-10.00" dynamics="1.11">
-        <pitch>
-          <step>D</step>
-          <octave>5</octave>
-          </pitch>
-        <duration>1</duration>
-        <voice>1</voice>
-        <type>16th</type>
+        <type>eighth</type>
         <stem>down</stem>
         <beam number="1">end</beam>
-        <beam number="2">end</beam>
         <lyric number="1" default-x="6.58" default-y="-52.80" relative-y="-30.00">
           <syllabic>single</syllabic>
-          <text>っ</text>
+          <text>あっ</text>
           </lyric>
         </note>
-      <note default-x="82.93" default-y="-15.00" dynamics="111.11">
+      <note default-x="72.13" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>down</stem>
@@ -2417,12 +2364,12 @@
           <text>ぱ</text>
           </lyric>
         </note>
-      <note default-x="126.26" default-y="-25.00" dynamics="111.11">
+      <note default-x="120.22" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2432,13 +2379,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="51" width="175.12">
+    <measure number="51" width="175.34">
       <note default-x="12.02" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2448,12 +2395,12 @@
           <text>ふ</text>
           </lyric>
         </note>
-      <note default-x="40.86" default-y="-30.00" dynamics="111.11">
+      <note default-x="40.90" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2463,12 +2410,12 @@
           <text>じ</text>
           </lyric>
         </note>
-      <note default-x="69.70" default-y="-25.00" dynamics="111.11">
+      <note default-x="69.77" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         <stem>up</stem>
@@ -2477,12 +2424,12 @@
           <text>の</text>
           </lyric>
         </note>
-      <note default-x="115.84" default-y="-30.00" dynamics="111.11">
+      <note default-x="115.98" default-y="-30.00" dynamics="111.11">
         <pitch>
           <step>G</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2492,12 +2439,12 @@
           <text>や</text>
           </lyric>
         </note>
-      <note default-x="144.68" default-y="-25.00" dynamics="111.11">
+      <note default-x="144.86" default-y="-25.00" dynamics="111.11">
         <pitch>
           <step>A</step>
           <octave>4</octave>
           </pitch>
-        <duration>2</duration>
+        <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
         <stem>up</stem>
@@ -2508,13 +2455,13 @@
           </lyric>
         </note>
       </measure>
-    <measure number="52" width="117.68">
+    <measure number="52" width="117.89">
       <note default-x="10.36" default-y="-15.00" dynamics="111.11">
         <pitch>
           <step>C</step>
           <octave>5</octave>
           </pitch>
-        <duration>8</duration>
+        <duration>4</duration>
         <voice>1</voice>
         <type>half</type>
         <stem>down</stem>
@@ -2525,7 +2472,7 @@
         </note>
       <note>
         <rest/>
-        <duration>4</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
         </note>
