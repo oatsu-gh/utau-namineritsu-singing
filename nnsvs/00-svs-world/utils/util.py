@@ -238,5 +238,4 @@ def fix_mono_lab_after_align(lab):
             f.append((f.end_times[-1], lab.end_times[i], lab.contexts[i]))
         else:
             f.append(lab[i], strict=False)
-    print()
     return(f)
