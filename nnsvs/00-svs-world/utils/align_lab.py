@@ -22,8 +22,6 @@ os.makedirs(dst_dir, exist_ok=True)
 
 excludes = []
 for (path1, path2) in zip(sinsy_files, mono_label_files):
-    print(f'sinsy_file: {path1}')
-    print(f'mono_label: {path2}')
     lab_sinsy = hts.load(path1)
     lab_mono_label = hts.load(path2)
     name = basename(path1)
@@ -43,7 +41,6 @@ for (path1, path2) in zip(sinsy_files, mono_label_files):
     lab_sinsy = fix_mono_lab_after_align(lab_sinsy)
     with open(join(dst_dir, name), "w") as of:
         of.write(str(lab_sinsy))
-    print(name, d)
-    print('----')
+    print('align_lab success:', name, d)
 
 sys.exit(0)
