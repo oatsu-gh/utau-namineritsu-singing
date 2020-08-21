@@ -18,7 +18,7 @@ question_path=./conf/jp_qst001_nnsvs.hed
 # leave empty to disable
 pretrained_expdir=
 
-batch_size=8
+batch_size=1
 
 stage=0
 stop_stage=0
