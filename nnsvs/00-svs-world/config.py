@@ -9,6 +9,7 @@ out_dir = 'output'
 
 # PLEASE CHANGE THE PATH BASED ON YOUR ENVIRONMENT
 db_root = join(expanduser('~'), 'data/utau-namineritsu-singing/data/')
+wav_path = db_root
 
 # Sinsy dictionary directory
 # OFUTON_P_UTAGOE_DB contains the unvoiced vowels ('I').

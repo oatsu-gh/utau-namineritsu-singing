@@ -1,55 +1,57 @@
-import pysinsy
 import os
-
+import sys
 from glob import glob
-from os.path import join, basename, splitext, exists
+from os.path import basename, exists, join, splitext
+
+import numpy as np
+from tqdm import tqdm
+
+import config
+import librosa
+import pysinsy
+import soundfile as sf
 from nnmnkwii.io import hts
 from scipy.io import wavfile
-import librosa
-import soundfile as sf
-import sys
-from tqdm import tqdm
-import numpy as np
-import config
-from util import fix_offset, trim_sil_and_pau, get_note_indices, _is_silence
+from util import _is_silence, fix_offset, get_note_indices, trim_sil_and_pau
 
-full_align_dir = join(config.out_dir, "full_dtw_seg")
-full_score_dir = join(config.out_dir, "sinsy_full_round_seg")
+full_align_dir = join(config.out_dir, 'full_dtw_seg')
+full_score_dir = join(config.out_dir, 'sinsy_full_round_seg')
 
 
 def sanity_check_lab(lab):
-    for b,e,l in lab:
-        assert e-b > 0
+    for b, e, l in lab:
+        assert e - b > 0
 
 
 def remove_sil_and_pau(lab):
     newlab = hts.HTSLabelFile()
     for l in lab:
-        if "-sil" not in l[-1] and "-pau" not in l[-1]:
+        if '-sil' not in l[-1] and '-pau' not in l[-1]:
             newlab.append(l, strict=False)
 
     return newlab
 
-### Prepare data for time-lag models
+# Prepare data for time-lag models
 
-dst_dir = join(config.out_dir, "timelag")
-lab_align_dst_dir  = join(dst_dir, "label_phone_align")
-lab_score_dst_dir  = join(dst_dir, "label_phone_score")
+
+dst_dir = join(config.out_dir, 'timelag')
+lab_align_dst_dir = join(dst_dir, 'label_phone_align')
+lab_score_dst_dir = join(dst_dir, 'label_phone_score')
 
 for d in [lab_align_dst_dir, lab_score_dst_dir]:
     os.makedirs(d, exist_ok=True)
 
 
-base_files = sorted(glob(join(config.out_dir, "full_dtw", "*.lab")))
+base_files = sorted(glob(join(config.out_dir, 'full_dtw', '*.lab')))
 
-print("Prepare data for time-lag models")
+print('Prepare data for time-lag models')
 for base in tqdm(base_files):
     utt_id = splitext(basename(base))[0]
     seg_idx = 0
 
     # Compute offset for the entire song
-    lab_align_path = join(config.out_dir, "full_dtw", f"{utt_id}.lab")
-    lab_score_path = join(config.out_dir, "sinsy_full_round", f"{utt_id}.lab")
+    lab_align_path = join(config.out_dir, 'full_dtw', f'{utt_id}.lab')
+    lab_score_path = join(config.out_dir, 'sinsy_full_round', f'{utt_id}.lab')
     lab_align = trim_sil_and_pau(hts.load(lab_align_path))
     lab_score = trim_sil_and_pau(hts.load(lab_score_path))
 
@@ -70,11 +72,11 @@ for base in tqdm(base_files):
     # Apply offset correction only when there is a big gap
     apply_offset_correction = np.abs(global_offset * 1e-7) > config.offset_correction_threshold
     if apply_offset_correction:
-        print(f"{utt_id}: Global offset (in sec): {global_offset * 1e-7}")
+        print(f'{utt_id}: Global offset (in sec): {global_offset * 1e-7}')
 
     while True:
-        lab_align_path = join(full_align_dir, f"{utt_id}_seg{seg_idx}.lab")
-        lab_score_path = join(full_score_dir, f"{utt_id}_seg{seg_idx}.lab")
+        lab_align_path = join(full_align_dir, f'{utt_id}_seg{seg_idx}.lab')
+        lab_score_path = join(full_score_dir, f'{utt_id}_seg{seg_idx}.lab')
         print(f'finalize_lab.py: lab_align_path: {lab_align_path}')
         print(f'finalize_lab.py: lab_score_path: {lab_score_path}')
         name = basename(lab_align_path)
@@ -107,7 +109,7 @@ for base in tqdm(base_files):
                 offset_ = global_offset
             else:
                 offset_ = segment_offset
-            print(f"{name} offset (in sec): {offset_ * 1e-7}")
+            print(f'{name} offset (in sec): {offset_ * 1e-7}')
         else:
             offset_ = 0
         # apply
@@ -129,7 +131,7 @@ for base in tqdm(base_files):
 
         if len(valid_note_indices) < len(note_indices):
             D = len(note_indices) - len(valid_note_indices)
-            print(f"{utt_id}.lab: {D}/{len(note_indices)} time-lags are excluded.")
+            print(f'{utt_id}.lab: {D}/{len(note_indices)} time-lags are excluded.')
 
         # Note onsets as labels
         lab_align = lab_align[valid_note_indices]
@@ -137,31 +139,31 @@ for base in tqdm(base_files):
 
         # Save lab files
         lab_align_dst_path = join(lab_align_dst_dir, name)
-        with open(lab_align_dst_path, "w") as of:
+        with open(lab_align_dst_path, 'w') as of:
             of.write(str(lab_align))
 
         lab_score_dst_path = join(lab_score_dst_dir, name)
-        with open(lab_score_dst_path, "w") as of:
+        with open(lab_score_dst_path, 'w') as of:
             of.write(str(lab_score))
 
         seg_idx += 1
 
 
-### Prepare data for duration models
+# Prepare data for duration models
 
-dst_dir = join(config.out_dir, "duration")
-lab_align_dst_dir  = join(dst_dir, "label_phone_align")
+dst_dir = join(config.out_dir, 'duration')
+lab_align_dst_dir = join(dst_dir, 'label_phone_align')
 
 for d in [lab_align_dst_dir, lab_score_dst_dir]:
     os.makedirs(d, exist_ok=True)
 
-print("Prepare data for duration models")
+print('Prepare data for duration models')
 for base in tqdm(base_files):
     utt_id = splitext(basename(base))[0]
     seg_idx = 0
 
     while True:
-        lab_align_path = join(full_align_dir, f"{utt_id}_seg{seg_idx}.lab")
+        lab_align_path = join(full_align_dir, f'{utt_id}_seg{seg_idx}.lab')
         name = basename(lab_align_path)
         assert seg_idx > 0 or exists(lab_align_path)
         if not exists(lab_align_path):
@@ -173,32 +175,27 @@ for base in tqdm(base_files):
 
         # Save lab file
         lab_align_dst_path = join(lab_align_dst_dir, name)
-        with open(lab_align_dst_path, "w") as of:
+        with open(lab_align_dst_path, 'w') as of:
             of.write(str(lab_align))
 
         seg_idx += 1
 
-### Prepare data for acoustic models
+# Prepare data for acoustic models
 
-dst_dir = join(config.out_dir, "acoustic")
-wav_dst_dir  = join(dst_dir, "wav")
-lab_align_dst_dir  = join(dst_dir, "label_phone_align")
-lab_score_dst_dir  = join(dst_dir, "label_phone_score")
+dst_dir = join(config.out_dir, 'acoustic')
+wav_dst_dir = join(dst_dir, 'wav')
+lab_align_dst_dir = join(dst_dir, 'label_phone_align')
+lab_score_dst_dir = join(dst_dir, 'label_phone_score')
 
 for d in [wav_dst_dir, lab_align_dst_dir, lab_score_dst_dir]:
     os.makedirs(d, exist_ok=True)
 
-print("Prepare data for acoustic models")
+print('Prepare data for acoustic models')
 for base in tqdm(base_files):
     utt_id = splitext(basename(base))[0]
-    wav_path = join(config.db_root, f"{utt_id}/{utt_id}.wav")
-#    print(wav_path)
+    wav_path = join(config.wav_path, f'{utt_id}.wav')
 
-    # workaround for wrong wav_path
-    if "shoujoujino_tanukibayashi" in wav_path and exists(wav_path) == False:
-        wav_path = join(config.db_root, "shoujoujino_tanikibayashi", f"{utt_id}.wav")
-
-#    print(wav_path)
+    print(wav_path)
     assert exists(wav_path)
     # sr, wave = wavfile.read(wav_path)
     wav, sr = librosa.load(wav_path, sr=48000)
@@ -208,8 +205,8 @@ for base in tqdm(base_files):
 
     seg_idx = 0
     while True:
-        lab_align_path = join(full_align_dir, f"{utt_id}_seg{seg_idx}.lab")
-        lab_score_path = join(full_score_dir, f"{utt_id}_seg{seg_idx}.lab")
+        lab_align_path = join(full_align_dir, f'{utt_id}_seg{seg_idx}.lab')
+        lab_score_path = join(full_score_dir, f'{utt_id}_seg{seg_idx}.lab')
         name = basename(lab_align_path)
         assert seg_idx > 0 or exists(lab_align_path)
         if not exists(lab_align_path):
@@ -220,7 +217,7 @@ for base in tqdm(base_files):
         # Make a slice of audio and then save it
         b, e = int(lab_align[0][0] * 1e-7 * sr), int(lab_align[-1][1] * 1e-7 * sr)
         wav_silce = wav[b:e]
-        wav_slice_path = join(wav_dst_dir, name.replace(".lab", ".wav"))
+        wav_slice_path = join(wav_dst_dir, name.replace('.lab', '.wav'))
         # TODO: consider explicit subtype
         sf.write(wav_slice_path, wav_silce, sr)
 
@@ -231,11 +228,11 @@ for base in tqdm(base_files):
 
         # Save label
         lab_align_dst_path = join(lab_align_dst_dir, name)
-        with open(lab_align_dst_path, "w") as of:
+        with open(lab_align_dst_path, 'w') as of:
             of.write(str(lab_align))
 
         lab_score_dst_path = join(lab_score_dst_dir, name)
-        with open(lab_score_dst_path, "w") as of:
+        with open(lab_score_dst_path, 'w') as of:
             of.write(str(lab_score))
 
         seg_idx += 1
