@@ -77,8 +77,8 @@ for base in tqdm(base_files):
     while True:
         lab_align_path = join(full_align_dir, f'{utt_id}_seg{seg_idx}.lab')
         lab_score_path = join(full_score_dir, f'{utt_id}_seg{seg_idx}.lab')
-        print(f'finalize_lab.py: lab_align_path: {lab_align_path}')
-        print(f'finalize_lab.py: lab_score_path: {lab_score_path}')
+        print(f'  finalize_lab.py: lab_align_path: {lab_align_path}')
+        print(f'  finalize_lab.py: lab_score_path: {lab_score_path}')
         name = basename(lab_align_path)
         assert seg_idx > 0 or exists(lab_align_path)
         if not exists(lab_align_path):
@@ -195,7 +195,7 @@ for base in tqdm(base_files):
     utt_id = splitext(basename(base))[0]
     wav_path = join(config.wav_path, f'{utt_id}.wav')
 
-    print(wav_path)
+    # print(wav_path)
     assert exists(wav_path)
     # sr, wave = wavfile.read(wav_path)
     wav, sr = librosa.load(wav_path, sr=48000)
