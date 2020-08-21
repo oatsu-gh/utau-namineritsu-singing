@@ -7,7 +7,12 @@ NNSVS_ROOT=$HOME/nnsvs
 # **CHANGE** this to your database path
 db_root=$PWD/../../data
 
+# voice bank name
 spk="utau_ritsu"
+# Max frequency:659.255 Hz (estimated from UST)
+f0_ceil=700
+# Min frequency: 220 Hz (estimated from UST)
+f0_floor=170
 
 dumpdir=dump
 
@@ -87,9 +92,9 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
     for s in ${datasets[@]};
     do
 	# utau-namineritsu-singing
-	# Min frequency: 220 Hz, Max frequency: 659.255 Hz (Both estimated from UST)
+	# Min frequency and Max frequency
       nnsvs-prepare-features utt_list=data/list/$s.list out_dir=$dump_org_dir/$s/  \
-        question_path=$question_path acoustic.f0_floor=170 acoustic.f0_ceil=700
+        question_path=$question_path acoustic.f0_floor=f0_floor acoustic.f0_ceil=f0_ceil
     done
 
     # Compute normalization stats for each input/output
