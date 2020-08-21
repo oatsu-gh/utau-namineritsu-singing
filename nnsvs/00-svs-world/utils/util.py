@@ -229,6 +229,7 @@ def fix_mono_lab_after_align(lab):
     f = hts.HTSLabelFile()
     f.append(lab[0])
     for i in range(1, len(lab)):
+        print(lab.contexts[i], end=' ')
         # fix contigous pau
         if(f.contexts[-1] == "pau" and lab.contexts[i] == "pau"
            and f.start_times[-1] == lab.start_times[i]
@@ -238,4 +239,5 @@ def fix_mono_lab_after_align(lab):
             f.append((f.end_times[-1], lab.end_times[i], lab.contexts[i]))
         else:
             f.append(lab[i], strict=False)
+    print()
     return(f)

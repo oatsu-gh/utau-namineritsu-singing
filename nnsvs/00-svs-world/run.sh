@@ -66,7 +66,7 @@ expdir=exp/$expname
 
 if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
     echo "stage 0: Data preparation"
-    echo "db_root = \"$db_root\"" >> config.py
+    # echo "db_root = \"$db_root\"" >> config.py
     sh utils/data_prep.sh
     mkdir -p data/list
     ln -sfn $PWD/output/timelag data/timelag
