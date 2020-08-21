@@ -5,7 +5,7 @@ NNSVS_ROOT=$HOME/nnsvs
 
 # Directory
 # **CHANGE** this to your database path
-db_root=$HOME/data/utau-namineritsu-singing
+db_root=$PWD/../..
 
 spk="utau_ritsu"
 
