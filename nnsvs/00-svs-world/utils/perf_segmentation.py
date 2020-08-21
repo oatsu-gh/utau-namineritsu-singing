@@ -33,9 +33,7 @@ for name in ["full_dtw", "sinsy_full_round", "sinsy_mono_round"]:
     files = sorted(glob(join(config.out_dir, name, "*.lab")))
     for idx, base in enumerate(base_files):
         utt_id = splitext(basename(base))[0]
-        print('----------------------------------------------------')
         print('pref_segmentation.py utt_id: ', utt_id)
-        print('----------------------------------------------------')
         base_lab = hts.load(base)
         base_segments, start_indices, end_indices = segment_labels(
             base_lab, True, config.segmentation_threshold,
