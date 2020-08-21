@@ -8,7 +8,7 @@ from os.path import expanduser, join
 out_dir = 'output'
 
 # PLEASE CHANGE THE PATH BASED ON YOUR ENVIRONMENT
-db_root = join(expanduser('~'), 'data/utau-namineritsu-singing/')
+db_root = join(expanduser('~'), 'data/utau-namineritsu-singing/data/')
 
 # Sinsy dictionary directory
 # OFUTON_P_UTAGOE_DB contains the unvoiced vowels ('I').
@@ -38,4 +38,4 @@ offset_correction_threshold = 0.01
 # Time-lag constraints to filter outliers
 timelag_allowed_range = (-20, 19)
 timelag_allowed_range_rest = (-40, 39)
-db_root = '/home/crazy-nnsvs/data/utau-namineritsu-singing/'
+db_root = '/home/crazy-nnsvs/data/utau-namineritsu-singing/data/'
