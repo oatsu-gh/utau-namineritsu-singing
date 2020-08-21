@@ -1,12 +1,13 @@
 import os
-import numpy as np
-from glob import glob
-from os.path import join, basename, splitext
-from nnmnkwii.io import hts
 import sys
-from util import segment_labels, trim_sil_and_pau, compute_nosil_duration
-import config
+from glob import glob
+from os.path import basename, join, splitext
 
+import numpy as np
+
+import config
+from nnmnkwii.io import hts
+from util import compute_nosil_duration, segment_labels, trim_sil_and_pau
 
 # copy mono alignments to full
 mono_files = sorted(glob(join(config.out_dir, "mono_dtw", "*.lab")))
@@ -33,7 +34,7 @@ for name in ["full_dtw", "sinsy_full_round", "sinsy_mono_round"]:
     files = sorted(glob(join(config.out_dir, name, "*.lab")))
     for idx, base in enumerate(base_files):
         utt_id = splitext(basename(base))[0]
-        print('pref_segmentation.py utt_id: ', utt_id)
+        print(f'pref_segmentation.py: base: {base}')
         base_lab = hts.load(base)
         base_segments, start_indices, end_indices = segment_labels(
             base_lab, True, config.segmentation_threshold,
@@ -42,7 +43,7 @@ for name in ["full_dtw", "sinsy_full_round", "sinsy_mono_round"]:
         if name == "full_dtw":
             d = []
             for seg in base_segments:
-              d.append((seg.end_times[-1] - seg.start_times[0]) * 1e-7)
+                d.append((seg.end_times[-1] - seg.start_times[0]) * 1e-7)
             lengths[utt_id] = d
 
         lab = hts.load(files[idx])
@@ -50,8 +51,8 @@ for name in ["full_dtw", "sinsy_full_round", "sinsy_mono_round"]:
 #        print("{}: len:{}".format(base, len(base_lab)))
         assert len(lab) == len(base_lab)
         segments = []
-        for s,e in zip(start_indices, end_indices):
-            segments.append(lab[s:e+1])
+        for s, e in zip(start_indices, end_indices):
+            segments.append(lab[s:e + 1])
 
         dst_dir = join(config.out_dir, f"{name}_seg")
         os.makedirs(dst_dir, exist_ok=True)
