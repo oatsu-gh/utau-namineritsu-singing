@@ -86,12 +86,10 @@ bash run.sh --stage 2 --stop-stage 6 # 動作未確認
 
 ## このデータベースの作り方
 
-    1. [歌声DB制作用MIDI40曲詰め合わせ](https://twitter.com/tansansuisui/status/1292803278275665921) のMIDIをCeVIOで開いてCCSにする。
-    2. CCSをSynthVでUSTに変換（UtaFormatixでも可能）
-    3. MuseScoreでMIDIをMusicXMLに変換
-    4. [VoiceEngineChanger](https://haruqa.booth.pm/items/1515081) でUSTの設定を一括変更し、波音リツを音源に設定
-    5. 各USTで おまかせ☆2020 または 連続音一括設定 で、プレフィックス付きの連続音歌詞にする。
-    6. 各USTから音声ファイルを出力する。このとき、音声ファイル名がUSTファイル名と一致するようにする。
-    7. [utau2db](https://github.com/oatsu-gh/utau2db) でUSTファイルからINIファイルおよびLABファイルを生成する。この際、子音の長さはmoresamplerによる原音設定ファイルより取得している。
-
-
+1. [歌声DB制作用MIDI40曲詰め合わせ](https://twitter.com/tansansuisui/status/1292803278275665921) のMIDIをCeVIOで開いてCCSにする。
+2. CCSをSynthVでUSTに変換（UtaFormatixでも可能）
+3. MuseScoreでMIDIをMusicXMLに変換
+4. [VoiceEngineChanger](https://haruqa.booth.pm/items/1515081) でUSTの設定を一括変更し、波音リツを音源に設定
+5. 各USTで おまかせ☆2020 または 連続音一括設定 で、プレフィックス付きの連続音歌詞にする。
+6. 各USTから音声ファイルを出力する。このとき、音声ファイル名がUSTファイル名と一致するようにする。
+7. [utau2db](https://github.com/oatsu-gh/utau2db) でUSTファイルからINIファイルおよびLABファイルを生成する。この際、子音の長さはmoresamplerによる原音設定ファイルより取得している。
