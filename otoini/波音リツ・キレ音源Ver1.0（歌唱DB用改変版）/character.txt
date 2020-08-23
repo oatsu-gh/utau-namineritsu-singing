@@ -1,4 +1,0 @@
-name=波音リツ・キレ連続音Ver1.0（歌唱DB用改変版）
-image=
-author=
-web=https://github.com/oatsu-gh/utau-namineritsu-singing/otoini
