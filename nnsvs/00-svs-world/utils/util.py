@@ -149,18 +149,29 @@ def segment_labels(lab, strict=True, threshold=1.0, min_duration=5.0,
 
 
 def prep_ph2num():
+    """
+    tableの辞書の音素を {sil: 0, pau: 1, br:2, [k, w, a]:3, ...} に変換する。
+    sinsyときりたんの辞書を統合している。
+    カタカナに統一することで、ひらがなとカタカナの重複を消している。
+    """
+    # {ア: [a], カ: [k, a] ... } のような辞書を作る
     kiritan_phone_mapping = {}
     with open(join(config.sinsy_dic, "japanese.table")) as f:
-        for l in f:
-            s = l.strip().split()
+        for line in f:
+            s = line.strip().split()
             key = jaconv.hira2kata(s[0])
             kiritan_phone_mapping[key] = s[1:]
+
+    # {ア: [a], カ: [k, a] ... } のような辞書を作る
     sinsy_phone_mapping = {}
     with open(join(config.sinsy_dic, "japanese.utf_8.table")) as f:
-        for l in f:
-            s = l.strip().split()
+        for line in f:
+            s = line.strip().split()
             key = jaconv.hira2kata(s[0])
             sinsy_phone_mapping[key] = s[1:]
+
+    # 上で作ったtableの辞書の音素を {sil: 0, pau: 1, br:2, [k, w, a]:3, ...} に変換する
+    # sinsyときりたんの辞書を結合している
     ph2num = {}
     counter = 0
     for p in ["sil", "pau", "br"]:
