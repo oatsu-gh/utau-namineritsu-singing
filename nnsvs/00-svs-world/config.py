@@ -8,8 +8,8 @@ from os.path import expanduser, join
 out_dir = 'output'
 
 # PLEASE CHANGE THE PATH BASED ON YOUR ENVIRONMENT
-db_root = join(expanduser('~'), 'data/utau-namineritsu-singing/data/')
-wav_path = db_root
+db_root = '/mnt/c/Users/CrazY/Documents/GitHub/utau-namineritsu-singing/data'
+wav_path = '/mnt/c/Users/CrazY/Documents/GitHub/utau-namineritsu-singing/data'
 
 # Sinsy dictionary directory
 # OFUTON_P_UTAGOE_DB contains the unvoiced vowels ('I').

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
-NNSVS_ROOT=$HOME/nnsvs
+NNSVS_ROOT=~/nnsvs
 
 # Directory
 # **CHANGE** this to your database path
