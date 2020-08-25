@@ -228,7 +228,7 @@ fi
 
 
 # ここから追記
-if [ ${stage} -le 7 ] && [ ${stop_stage} -ge 6 ]; then
+if [ ${stage} -le 7 ] && [ ${stop_stage} -ge 7 ]; then
     echo "stage 7: Synthesis waveforms, with any full-label"
     for s in ${testsets[@]}; do
         for input in label_phone_score label_phone_align; do
