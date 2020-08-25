@@ -3,11 +3,11 @@ from os import getcwd
 from os.path import join
 
 # Output directory
-# All the igenerated labels, intermediate files, and segmented wav files
+# All the generated labels, intermediate files, and segmented wav files
 # will be saved in the following directory
-out_dir = 'output'
+out_dir = 'temp'
 
-# PLEASE CHANGE THE PATH BASED ON YOUR ENVIRONMENT
+# NOTE: PLEASE CHANGE THE PATH BASED ON YOUR ENVIRONMENT
 db_root = '/mnt/c/Users/CrazY/Documents/GitHub/utau-namineritsu-singing/data'
 wav_path = '/mnt/c/Users/CrazY/Documents/GitHub/utau-namineritsu-singing/data'
 
