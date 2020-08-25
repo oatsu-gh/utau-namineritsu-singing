@@ -225,3 +225,35 @@ if [ ${stage} -le 6 ] && [ ${stop_stage} -ge 6 ]; then
         done
     done
 fi
+
+
+# ここから追記
+if [ ${stage} -le 7 ] && [ ${stop_stage} -ge 6 ]; then
+    echo "stage 7: Synthesis waveforms, with any full-label"
+    for s in ${testsets[@]}; do
+        for input in label_phone_score label_phone_align; do
+            if [ $input = label_phone_score ]; then
+                ground_truth_duration=false
+            else
+                ground_truth_duration=true
+            fi
+            xrun nnsvs-synthesis question_path=conf/jp_qst001_nnsvs.hed \
+            timelag.checkpoint=$expdir/timelag/latest.pth \
+            timelag.in_scaler_path=$dump_norm_dir/in_timelag_scaler.joblib \
+            timelag.out_scaler_path=$dump_norm_dir/out_timelag_scaler.joblib \
+            timelag.model_yaml=$expdir/timelag/model.yaml \
+            duration.checkpoint=$expdir/duration/latest.pth \
+            duration.in_scaler_path=$dump_norm_dir/in_duration_scaler.joblib \
+            duration.out_scaler_path=$dump_norm_dir/out_duration_scaler.joblib \
+            duration.model_yaml=$expdir/duration/model.yaml \
+            acoustic.checkpoint=$expdir/acoustic/latest.pth \
+            acoustic.in_scaler_path=$dump_norm_dir/in_acoustic_scaler.joblib \
+            acoustic.out_scaler_path=$dump_norm_dir/out_acoustic_scaler.joblib \
+            acoustic.model_yaml=$expdir/acoustic/model.yaml \
+            utt_list=sample/my_song_list.txt \
+            in_dir=sample \
+            out_dir=sample \
+            ground_truth_duration=$ground_truth_duration
+        done
+    done
+fi
