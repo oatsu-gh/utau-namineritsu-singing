@@ -3,6 +3,7 @@
 """
 stage 0
 step  1
+generate full/mono labels by sinsy
 """
 import os
 from glob import glob
