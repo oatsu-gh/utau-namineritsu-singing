@@ -1,6 +1,6 @@
 # Common settings
 from os import getcwd
-from os.path import expanduser, join
+from os.path import join
 
 # Output directory
 # All the igenerated labels, intermediate files, and segmented wav files

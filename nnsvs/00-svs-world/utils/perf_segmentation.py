@@ -6,7 +6,7 @@ from os.path import basename, join, splitext
 import config
 import numpy as np
 from nnmnkwii.io import hts
-from util import compute_nosil_duration, segment_labels, trim_sil_and_pau
+from util import segment_labels
 
 
 def main():
@@ -68,21 +68,21 @@ def main():
 
     for ls in [lengths]:
         for k, v in ls.items():
-            print("{}.lab: segment duration min {:.02f}, max {:.02f}, mean {:.02f}".format(
+            print("    {}.lab:\tsegment duration min {:.02f}, max {:.02f}, mean {:.02f}".format(
                 k, np.min(v), np.max(v), np.mean(v)))
 
         flatten_lengths = []
         for k, v in ls.items():
-            sys.stdout.write(f"{k}.lab: segment lengths: ")
+            sys.stdout.write(f"    {k}.lab:\tsegment lengths: ")
             for d in v:
                 sys.stdout.write("{:.02f}, ".format(d))
                 flatten_lengths.append(d)
             sys.stdout.write("\n")
 
-        print("Segmentation stats: min {:.02f}, max {:.02f}, mean {:.02f}".format(
+        print("  Segmentation stats: min {:.02f}, max {:.02f}, mean {:.02f}".format(
             np.min(flatten_lengths), np.max(flatten_lengths), np.mean(flatten_lengths)))
 
-        print("Total number of segments: {}".format(len(flatten_lengths)))
+        print("  Total number of segments: {}".format(len(flatten_lengths)))
 
 
 if __name__ == '__main__':

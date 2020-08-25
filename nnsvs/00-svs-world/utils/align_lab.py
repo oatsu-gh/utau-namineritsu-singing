@@ -11,9 +11,8 @@ Get rough alignment between
 """
 
 import os
-import sys
 from glob import glob
-from os.path import basename, join, splitext
+from os.path import basename, join
 
 import config
 from fastdtw import fastdtw
