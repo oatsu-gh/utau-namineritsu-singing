@@ -1,1 +1,6 @@
-pysinsy で MusicXML から生成した label
+# sinsy_label
+
+pysinsy で MusicXML から生成したラベル
+
+- lab : HTS mono-phone label
+- full : HTS full-context label

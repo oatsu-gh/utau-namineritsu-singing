@@ -14,11 +14,11 @@ bash run.sh --stage 2 --stop-stage 6 # 動作未確認
 ## 仕様
 
 - 曲数：40
-- BPM：60 ~ 128
+- BPM：60 ~ 263（最短は16分音符）
   - UST より [bpm_and_range_from_ust](https://github.com/oatsu-gh/oto2lab/tree/master/tool/bpm_and_range_from_ust) を使って算出
-- 音域：A3 (220 Hz) ~ E5 (659.255 Hz)
+- 音域：C2 (220 Hz) ~ B6 (659.255 Hz)
   - UST より [bpm_and_range_from_ust](https://github.com/oatsu-gh/oto2lab/tree/master/tool/bpm_and_range_from_ust) を使って算出
-- 有音発声時間：およそ 1800 秒
+- 有音発声時間：およそ 9455 秒
   - LAB より [voiced_part_length_from_lab](https://github.com/oatsu-gh/oto2lab/tree/master/tool/voiced_part_length_from_lab) を使って算出
 
 ### 同梱ファイル
