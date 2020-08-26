@@ -94,7 +94,7 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
 	# utau-namineritsu-singing
 	# Min frequency and Max frequency
       nnsvs-prepare-features utt_list=data/list/$s.list out_dir=$dump_org_dir/$s/  \
-        question_path=$question_path acoustic.f0_floor=f0_floor acoustic.f0_ceil=f0_ceil
+        question_path=$question_path acoustic.f0_floor=$f0_floor acoustic.f0_ceil=$f0_ceil
     done
 
     # Compute normalization stats for each input/output
@@ -205,7 +205,7 @@ if [ ${stage} -le 6 ] && [ ${stop_stage} -ge 6 ]; then
             else
                 ground_truth_duration=true
             fi
-            xrun nnsvs-synthesis question_path=conf/jp_qst001_nnsvs.hed \
+            xrun nnsvs-synthesis question_path=$question_path \
             timelag.checkpoint=$expdir/timelag/latest.pth \
             timelag.in_scaler_path=$dump_norm_dir/in_timelag_scaler.joblib \
             timelag.out_scaler_path=$dump_norm_dir/out_timelag_scaler.joblib \
@@ -237,7 +237,7 @@ if [ ${stage} -le 7 ] && [ ${stop_stage} -ge 7 ]; then
             else
                 ground_truth_duration=true
             fi
-            xrun nnsvs-synthesis question_path=conf/jp_qst001_nnsvs.hed \
+            xrun nnsvs-synthesis question_path=$question_path \
             timelag.checkpoint=$expdir/timelag/latest.pth \
             timelag.in_scaler_path=$dump_norm_dir/in_timelag_scaler.joblib \
             timelag.out_scaler_path=$dump_norm_dir/out_timelag_scaler.joblib \
