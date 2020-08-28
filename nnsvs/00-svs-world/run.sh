@@ -9,15 +9,15 @@ NNSVS_ROOT=~/nnsvs
 
 # voice bank name
 spk="utau_ritsu"
-# Max frequency:1976.533 Hz (B6, estimated from UST)
-f0_ceil=2100
-# Min frequency: 65.406 Hz (C2, estimated from UST)
-f0_floor=60
+# Max frequency:659.255 Hz (E5, estimated from UST)
+f0_ceil=700
+# Min frequency: 220 Hz (A3, estimated from UST)
+f0_floor=200
 
 dumpdir=dump
 
 # HTS-style question used for extracting musical/linguistic context from musicxml files
-question_path=./conf/jp_qst001_nnsvs.hed
+question_path=./conf/jp_qst001_nnsvs_simple.hed
 
 # Pretrained model dir
 # leave empty to disable
@@ -29,7 +29,7 @@ stage=0
 stop_stage=0
 
 # exp tag
-tag="" # tag for managing experiments.
+tag="simple_qst_1" # tag for managing experiments.
 
 . $NNSVS_ROOT/utils/parse_options.sh || exit 1;
 
