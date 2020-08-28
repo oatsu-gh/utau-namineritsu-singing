@@ -260,14 +260,6 @@ QS "R-Syllable_Language=JPN_1" {*@JPN&1/D:*}
 CQS "d2" {!(\d+)#}
 CQS "d3" {#(\d+)$}
 
-QS "L-Note_Beat=x/x" {*$x/x%*}
-QS "L-Note_Beat=1/4" {*$1/4%*}
-QS "L-Note_Beat=2/4" {*$2/4%*}
-QS "L-Note_Beat=3/4" {*$3/4%*}
-QS "L-Note_Beat=4/4" {*$4/4%*}
-QS "L-Note_Beat=5/4" {*$5/4%*}
-QS "L-Note_Beat=4/8" {*$4/8%*}
-QS "L-Note_Beat=6/8" {*$6/8%*}
 
 CQS "d6" {|(\d+)&}
 CQS "d7" {&(\d+);}
@@ -276,14 +268,6 @@ CQS "d8" {;(\d+)-}
 CQS "e2" {](\d+)^}
 CQS "e3" {^(\d+)=}
 
-QS "C-Note_Beat=x/x" {*=x/x~*}
-QS "C-Note_Beat=1/4" {*=1/4~*}
-QS "C-Note_Beat=2/4" {*=2/4~*}
-QS "C-Note_Beat=3/4" {*=3/4~*}
-QS "C-Note_Beat=4/4" {*=4/4~*}
-QS "C-Note_Beat=5/4" {*=5/4~*}
-QS "C-Note_Beat=4/8" {*=4/8~*}
-QS "C-Note_Beat=6/8" {*=6/8~*}
 
 CQS "e6" {!(\d+)@}
 CQS "e7" {@(\d+)#}
@@ -336,15 +320,6 @@ CQS "e58" {+(\d+)!}
 
 CQS "f2" {#(\d+)#}
 CQS "f3" {#(\d+)-}
-
-QS "R-Note_Beat=x/x" {*-x/x$*}
-QS "R-Note_Beat=1/4" {*-1/4$*}
-QS "R-Note_Beat=2/4" {*-2/4$*}
-QS "R-Note_Beat=3/4" {*-3/4$*}
-QS "R-Note_Beat=4/4" {*-4/4$*}
-QS "R-Note_Beat=5/4" {*-5/4$*}
-QS "R-Note_Beat=4/8" {*-4/8$*}
-QS "R-Note_Beat=6/8" {*-6/8$*}
 
 CQS "f6" {$(\d+)+}
 CQS "f7" {+(\d+)%}

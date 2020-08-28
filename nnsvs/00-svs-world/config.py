@@ -24,7 +24,7 @@ segmentation_threshold = 0.9
 
 # Min duration for a segment
 # note: there could be some execptions (e.g., the last segment of a song)
-segment_min_duration = 4.0
+segment_min_duration = 2.0
 
 # Force split segments if long silence is found regardless of min_duration
 force_split_threshold = 30
