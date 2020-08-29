@@ -17,20 +17,23 @@ f0_floor=200
 dumpdir=dump
 
 # HTS-style question used for extracting musical/linguistic context from musicxml files
-question_path=./conf/jp_qst001_nnsvs_simple.hed
+question_path=./conf/jp_qst001_nnsvs_simple_2.hed
 
 # Pretrained model dir
 # leave empty to disable
 pretrained_expdir=
 
-num_workers=4
-batch_size=2
+num_workers=8
+batch_size=4
 
 stage=0
-stop_stage=0
+stop_stage=7
 
 # exp tag
-tag="simple_qst_1" # tag for managing experiments.
+tag="simple_qst_2" # tag for managing experiments.
+timelag_in_dim=303
+duration_in_dim=303
+acoustic_in_dim=307
 
 . $NNSVS_ROOT/utils/parse_options.sh || exit 1;
 
@@ -143,7 +146,8 @@ if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
         data.dev.out_dir=$dump_norm_dir/$dev_set/out_timelag/ \
         model=timelag \
         train.out_dir=$expdir/timelag \
-        model.netG.params.in_dim=285 \
+        model.netG.params.in_dim=$timelag_in_dim \
+        data.num_workers=$num_workers \
         data.batch_size=$batch_size \
         resume.checkpoint=$resume_checkpoint
 fi
@@ -160,7 +164,8 @@ if [ ${stage} -le 3 ] && [ ${stop_stage} -ge 3 ]; then
         data.dev.in_dir=$dump_norm_dir/$dev_set/in_duration/ \
         data.dev.out_dir=$dump_norm_dir/$dev_set/out_duration/ \
         model=duration train.out_dir=$expdir/duration \
-        model.netG.params.in_dim=285 \
+        model.netG.params.in_dim=$duration_in_dim \
+        data.num_workers=$num_workers \
         data.batch_size=$batch_size \
         resume.checkpoint=$resume_checkpoint
 fi
@@ -178,7 +183,8 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
         data.dev.in_dir=$dump_norm_dir/$dev_set/in_acoustic/ \
         data.dev.out_dir=$dump_norm_dir/$dev_set/out_acoustic/ \
         model=acoustic train.out_dir=$expdir/acoustic \
-        model.netG.params.in_dim=289 \
+        model.netG.params.in_dim=$acoustic_in_dim \
+        data.num_workers=$num_workers \
         data.batch_size=$batch_size \
         resume.checkpoint=$resume_checkpoint
 fi
