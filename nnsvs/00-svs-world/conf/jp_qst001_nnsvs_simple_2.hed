@@ -30,6 +30,41 @@ QS "L-Phone_Boin_O" {*^o-*,*^O-*}
 QS "C-Phone_Boin_O" {*-o+*,*-O+*}
 QS "R-Phone_Boin_O" {*+o=*,*+O=*}
 
+QS "L-Phone_Shiin_b" {*^b-*,*^by-*}
+QS "C-Phone_Shiin_b" {*-b+*,*-by+*}
+QS "R-Phone_Shiin_b" {*+b=*,*+by=*}
+QS "L-Phone_Shiin_m" {*^m-*,*^my-*}
+QS "C-Phone_Shiin_m" {*-m+*,*-my+*}
+QS "R-Phone_Shiin_m" {*+m=*,*+my=*}
+QS "L-Phone_Shiin_d" {*^d-*,*^dy-*}
+QS "C-Phone_Shiin_d" {*-d+*,*-dy+*}
+QS "R-Phone_Shiin_d" {*+d=*,*+dy=*}
+QS "L-Phone_Shiin_n" {*^n-*,*^ny-*, *^N-*}
+QS "C-Phone_Shiin_n" {*-n+*,*-ny+*, *^N-*}
+QS "R-Phone_Shiin_n" {*+n=*,*+ny=*, *^N-*}
+QS "L-Phone_Shiin_r" {*^r-*,*^ry-*}
+QS "C-Phone_Shiin_r" {*-r+*,*-ry+*}
+QS "R-Phone_Shiin_r" {*+r=*,*+ry=*}
+QS "L-Phone_Shiin_g" {*^g-*,*^gy-*}
+QS "C-Phone_Shiin_g" {*-g+*,*-gy+*}
+QS "R-Phone_Shiin_g" {*+g=*,*+gy=*}
+QS "L-Phone_Shiin_p" {*^p-*,*^py-*}
+QS "C-Phone_Shiin_p" {*-p+*,*-py+*}
+QS "R-Phone_Shiin_p" {*+p=*,*+py=*}
+QS "L-Phone_Shiin_s" {*^s-*,*^sh-*}
+QS "C-Phone_Shiin_s" {*-s+*,*-sh+*}
+QS "R-Phone_Shiin_s" {*+s=*,*+sh=*}
+QS "L-Phone_Shiin_t" {*^t-*,*^ts-*,*^ch-*}
+QS "C-Phone_Shiin_t" {*-t+*,*-ts+*,*^ch-*}
+QS "R-Phone_Shiin_t" {*+t=*,*+ts=*,*^ch-*}
+QS "L-Phone_Shiin_k" {*^k-*,*^ky-*}
+QS "C-Phone_Shiin_k" {*-k+*,*-ky+*}
+QS "R-Phone_Shiin_k" {*+k=*,*+ky=*}
+QS "L-Phone_Shiin_h" {*^h-*,*^hy-*}
+QS "C-Phone_Shiin_h" {*-h+*,*-hy+*}
+QS "R-Phone_Shiin_h" {*+h=*,*+hy=*}
+
+
 QS "L-Phone_br"  {*^br-*}
 QS "C-Phone_br"  {*-br+*}
 QS "R-Phone_br"  {*+br=*}
