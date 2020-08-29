@@ -20,11 +20,11 @@ sinsy_dic = join(getcwd(), 'dic')
 # TODO: would be better to split songs by phrasal information in the musical scores
 
 # Split song by silences (in sec)
-segmentation_threshold = 0.9
+segmentation_threshold = 0.4
 
 # Min duration for a segment
 # note: there could be some execptions (e.g., the last segment of a song)
-segment_min_duration = 2.0
+segment_min_duration = 1
 
 # Force split segments if long silence is found regardless of min_duration
 force_split_threshold = 30

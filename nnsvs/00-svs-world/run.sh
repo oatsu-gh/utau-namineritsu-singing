@@ -17,23 +17,23 @@ f0_floor=200
 dumpdir=dump
 
 # HTS-style question used for extracting musical/linguistic context from musicxml files
-question_path=./conf/jp_qst001_nnsvs_simple_2.hed
+question_path=./conf/jp_qst001_nnsvs_simple_3.hed
 
 # Pretrained model dir
 # leave empty to disable
 pretrained_expdir=
 
-num_workers=8
-batch_size=4
+num_workers=1
+batch_size=1
 
 stage=0
 stop_stage=7
 
 # exp tag
-tag="simple_qst_2" # tag for managing experiments.
-timelag_in_dim=303
-duration_in_dim=303
-acoustic_in_dim=307
+tag="simple_qst_3_318dim" # tag for managing experiments.
+timelag_in_dim=318
+duration_in_dim=318
+acoustic_in_dim=322
 
 . $NNSVS_ROOT/utils/parse_options.sh || exit 1;
 
