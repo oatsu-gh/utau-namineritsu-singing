@@ -23,6 +23,7 @@ question_path=./conf/jp_qst001_nnsvs_simple.hed
 # leave empty to disable
 pretrained_expdir=
 
+num_workers=4
 batch_size=2
 
 stage=0
@@ -140,7 +141,9 @@ if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
         data.train_no_dev.out_dir=$dump_norm_dir/$train_set/out_timelag/ \
         data.dev.in_dir=$dump_norm_dir/$dev_set/in_timelag/ \
         data.dev.out_dir=$dump_norm_dir/$dev_set/out_timelag/ \
-        model=timelag train.out_dir=$expdir/timelag \
+        model=timelag \
+        train.out_dir=$expdir/timelag \
+        model.netG.params.in_dim=285 \
         data.batch_size=$batch_size \
         resume.checkpoint=$resume_checkpoint
 fi
@@ -157,6 +160,7 @@ if [ ${stage} -le 3 ] && [ ${stop_stage} -ge 3 ]; then
         data.dev.in_dir=$dump_norm_dir/$dev_set/in_duration/ \
         data.dev.out_dir=$dump_norm_dir/$dev_set/out_duration/ \
         model=duration train.out_dir=$expdir/duration \
+        model.netG.params.in_dim=285 \
         data.batch_size=$batch_size \
         resume.checkpoint=$resume_checkpoint
 fi
@@ -174,6 +178,7 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
         data.dev.in_dir=$dump_norm_dir/$dev_set/in_acoustic/ \
         data.dev.out_dir=$dump_norm_dir/$dev_set/out_acoustic/ \
         model=acoustic train.out_dir=$expdir/acoustic \
+        model.netG.params.in_dim=289 \
         data.batch_size=$batch_size \
         resume.checkpoint=$resume_checkpoint
 fi

@@ -1,4 +1,17 @@
+# nnsvs-utau-namineritsu-v2.1.1
+
+utau-namineritsu-singing をNNSVSの音声ライブラリ化したものです。
+
+以下は utau-namineritsu-singing のREADMEの複製です。
+
+
+
+---
+
+
+
 # utau-namineritsu-singing
+
 UTAU音源「波音リツ・キレ連続音 Ver1.0」の音声で作った試験用歌唱データベース。NNSVS用のスクリプトを同梱しています。
 
 ## NNSVSでの実行
@@ -72,15 +85,6 @@ bash run.sh --stage 0 --stop-stage 6
 - Windows 10 Home Insider Preview 2004
 - Python 3.8
 - MuseScore 3.5.0
-- [utaupy](https://github.com/oatsu-gh/utaupy) v1.6.5
-- [utau2db](https://github.com/oatsu-gh/utau2db) v1.1.1
+- [utaupy](https://github.com/oatsu-gh/utaupy) v1.6.3
+- [utau2db](https://github.com/oatsu-gh/utau2db) v1.1.0
 - [generate_random_ust](https://github.com/oatsu-gh/oto2lab/tree/master/tool/generate_random_ust)
-
-### 手順
-
-1. UTAUでMIDIをUSTに変換する。
-2. MuseScore でMIDIをMusicXMLに変換し、歌詞の促音「っ」を結合する。
-3. [VoiceEngineChanger](https://haruqa.booth.pm/items/1515081) でUSTの設定を一括変更し、波音リツを音源に設定する。
-4. 各USTで [おまかせ☆2020](https://twitter.com/maiko3tattun/status/1292117576063922182?s=20) または [連続音一括設定](http://z-server.game.coocan.jp/utau/utautop.html) で、プレフィックス付きの連続音歌詞にする。
-5. 各USTから音声ファイルを出力する。このとき、音声ファイル名がUSTファイル名と一致するようにする。
-6. [utau2db](https://github.com/oatsu-gh/utau2db) v1.0 でUSTファイルからINIファイルおよびLABファイルを生成する。
