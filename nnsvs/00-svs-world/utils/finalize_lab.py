@@ -104,8 +104,8 @@ def prepare_data_for_time_lag_models(full_align_dir, full_score_dir, base_files)
             onset_score = np.asarray(lab_score[note_indices].start_times)
 
             # Offset adjustment
-            segment_offset = (onset_align - onset_score).mean()
-            segment_offset = (segment_offset // FRAME_PERIOD) * FRAME_PERIOD
+            segment_offset = int((onset_align - onset_score).mean())
+            segment_offset = int((segment_offset // FRAME_PERIOD) * FRAME_PERIOD)
             if apply_offset_correction:
                 if config.global_offset_correction:
                     offset_ = global_offset
