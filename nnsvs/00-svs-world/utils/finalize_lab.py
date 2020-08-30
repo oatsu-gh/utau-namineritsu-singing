@@ -124,10 +124,10 @@ def prepare_data_for_time_lag_models(full_align_dir, full_score_dir, base_files)
                 note_idx = note_indices[idx]
                 lag = np.abs(a - b) / 50000
                 if _is_silence(lab_score.contexts[note_idx]):
-                    if lag >= config.timelag_allowed_range_rest[0] and lag <= config.timelag_allowed_range_rest[1]:
+                    if config.timelag_allowed_range_rest[0] <= lag <= config.timelag_allowed_range_rest[1]:
                         valid_note_indices.append(note_idx)
                 else:
-                    if lag >= config.timelag_allowed_range[0] and lag <= config.timelag_allowed_range[1]:
+                    if config.timelag_allowed_range[0] <= lag <= config.timelag_allowed_range[1]:
                         valid_note_indices.append(note_idx)
 
             if len(valid_note_indices) < len(note_indices):

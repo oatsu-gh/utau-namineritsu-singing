@@ -12,8 +12,8 @@ from shutil import copy2
 from tqdm import tqdm
 
 SINGER = 'utau_ritsu'
-PATH_QUESTION = 'conf/jp_qst001_nnsvs_simple.hed'
-NAME_EXPERIMENT = 'utau_ritsu_simple_qst_1'
+PATH_QUESTION = 'conf/jp_qst001_nnsvs_simple_3.hed'
+NAME_EXPERIMENT = 'utau_ritsu_simple_qst_3'
 
 
 def copy_question(path_question):
@@ -53,6 +53,9 @@ def copy_model(name_exp):
 
 
 def main():
+    """
+    各種ファイルをコピーする
+    """
     copy_question(PATH_QUESTION)
     copy_scaler(SINGER)
     copy_model(NAME_EXPERIMENT)

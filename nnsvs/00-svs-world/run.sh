@@ -23,8 +23,8 @@ question_path=./conf/jp_qst001_nnsvs_simple_3.hed
 # leave empty to disable
 pretrained_expdir=
 
-num_workers=1
-batch_size=1
+num_workers=12
+batch_size=8
 
 stage=0
 stop_stage=7
@@ -65,6 +65,11 @@ else
     expname=${spk}_${tag}
 fi
 expdir=exp/$expname
+
+if [ ${stage} -le -2 ] && [ ${stop_stage} -ge -2 ]; then
+    echo "stage -2: Clean old files"
+    rm -rf data dump outputs
+fi
 
 # if [ ${stage} -le -1 ] && [ ${stop_stage} -ge -1 ]; then
 #     if [ ! -e $db_root ]; then
