@@ -14,17 +14,21 @@ f0_ceil=700
 # Min frequency: 220 Hz (A3, estimated from UST)
 f0_floor=200
 
-dumpdir=dump
 
 # HTS-style question used for extracting musical/linguistic context from musicxml files
 question_path=./conf/jp_qst001_nnsvs_simple_3.hed
+# sample rate of WAV files (Hz)
+sample_rate=44100
+# frame period (ms)
+frame_period=5
 
+dumpdir=dump
 # Pretrained model dir
 # leave empty to disable
 pretrained_expdir=
 
-num_workers=12
-batch_size=8
+num_workers=16
+batch_size=2
 
 stage=0
 stop_stage=7
@@ -34,6 +38,7 @@ tag="simple_qst_3_318dim" # tag for managing experiments.
 timelag_in_dim=318
 duration_in_dim=318
 acoustic_in_dim=322
+
 
 . $NNSVS_ROOT/utils/parse_options.sh || exit 1;
 
@@ -102,7 +107,10 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
     do
 	# utau-namineritsu-singing
 	# Min frequency and Max frequency
-      nnsvs-prepare-features utt_list=data/list/$s.list out_dir=$dump_org_dir/$s/  \
+      nnsvs-prepare-features \
+      utt_list=data/list/$s.list \
+      out_dir=$dump_org_dir/$s/  \
+      frame_period=$frame_period \
         question_path=$question_path acoustic.f0_floor=$f0_floor acoustic.f0_ceil=$f0_ceil
     done
 
@@ -221,7 +229,10 @@ if [ ${stage} -le 6 ] && [ ${stop_stage} -ge 6 ]; then
             else
                 ground_truth_duration=true
             fi
-            xrun nnsvs-synthesis question_path=$question_path \
+            xrun nnsvs-synthesis \
+            question_path=$question_path \
+            frame_period=$frame_period \
+            sample_rate=$sample_rate \
             timelag.checkpoint=$expdir/timelag/latest.pth \
             timelag.in_scaler_path=$dump_norm_dir/in_timelag_scaler.joblib \
             timelag.out_scaler_path=$dump_norm_dir/out_timelag_scaler.joblib \
@@ -253,7 +264,10 @@ if [ ${stage} -le 7 ] && [ ${stop_stage} -ge 7 ]; then
             else
                 ground_truth_duration=true
             fi
-            xrun nnsvs-synthesis question_path=$question_path \
+            xrun nnsvs-synthesis \
+            question_path=$question_path \
+            frame_period=$frame_period \
+            sample_rate=$sample_rate \
             timelag.checkpoint=$expdir/timelag/latest.pth \
             timelag.in_scaler_path=$dump_norm_dir/in_timelag_scaler.joblib \
             timelag.out_scaler_path=$dump_norm_dir/out_timelag_scaler.joblib \

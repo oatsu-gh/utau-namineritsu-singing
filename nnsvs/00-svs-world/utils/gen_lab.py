@@ -17,6 +17,7 @@ from util import merge_sil
 sinsy = pysinsy.sinsy.Sinsy()
 
 assert sinsy.setLanguages("j", config.sinsy_dic)
+FRAME_PERIOD = config.frame_period  # 100ns
 
 
 def main():
@@ -57,8 +58,8 @@ def main():
             name = basename(path)
 
             for x in range(len(lab)):
-                lab.start_times[x] = round(lab.start_times[x] / 50000) * 50000
-                lab.end_times[x] = round(lab.end_times[x] / 50000) * 50000
+                lab.start_times[x] = (lab.start_times[x] // FRAME_PERIOD) * FRAME_PERIOD
+                lab.end_times[x] = (lab.end_times[x] // FRAME_PERIOD) * FRAME_PERIOD
 
             # Check if rounding is done property
             if name == "mono_label":

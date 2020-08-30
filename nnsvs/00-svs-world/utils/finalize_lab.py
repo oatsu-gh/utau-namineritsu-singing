@@ -14,7 +14,8 @@ from util import _is_silence, fix_offset, get_note_indices, trim_sil_and_pau
 FULL_ALIGN_DIR = join(config.out_dir, 'full_dtw_seg')
 FULL_SCORE_DIR = join(config.out_dir, 'sinsy_full_round_seg')
 BASE_FILES = sorted(glob(join(config.out_dir, 'full_dtw', '*.lab')))
-SAMPLING_RATE = 44100
+FRAME_PERIOD = config.frame_period # 100ns
+SAMPLE_RATE = config.sample_rate
 
 
 def sanity_check_lab(lab):
@@ -68,7 +69,7 @@ def prepare_data_for_time_lag_models(full_align_dir, full_score_dir, base_files)
         onset_align = np.asarray(lab_align[note_indices].start_times)
         onset_score = np.asarray(lab_score[note_indices].start_times)
         global_offset = (onset_align - onset_score).mean()
-        global_offset = int(round(global_offset / 50000) * 50000)
+        global_offset = (global_offset // FRAME_PERIOD) * FRAME_PERIOD
 
         # Apply offset correction only when there is a big gap
         apply_offset_correction = np.abs(global_offset * 1e-7) > config.offset_correction_threshold
@@ -104,7 +105,7 @@ def prepare_data_for_time_lag_models(full_align_dir, full_score_dir, base_files)
 
             # Offset adjustment
             segment_offset = (onset_align - onset_score).mean()
-            segment_offset = int(round(segment_offset / 50000) * 50000)
+            segment_offset = (segment_offset // FRAME_PERIOD) * FRAME_PERIOD
             if apply_offset_correction:
                 if config.global_offset_correction:
                     offset_ = global_offset
@@ -122,7 +123,7 @@ def prepare_data_for_time_lag_models(full_align_dir, full_score_dir, base_files)
             valid_note_indices = []
             for idx, (a, b) in enumerate(zip(onset_align, onset_score)):
                 note_idx = note_indices[idx]
-                lag = np.abs(a - b) / 50000
+                lag = np.abs(a - b) / FRAME_PERIOD
                 if _is_silence(lab_score.contexts[note_idx]):
                     if config.timelag_allowed_range_rest[0] <= lag <= config.timelag_allowed_range_rest[1]:
                         valid_note_indices.append(note_idx)
@@ -150,7 +151,7 @@ def prepare_data_for_time_lag_models(full_align_dir, full_score_dir, base_files)
             seg_idx += 1
 
 
-def prepare_data_for_time_duration_models(full_align_dir, full_score_dir, base_files):
+def prepare_data_for_time_duration_models(full_align_dir, base_files):
     """
     Prepare data for duration models
     """
@@ -185,7 +186,7 @@ def prepare_data_for_time_duration_models(full_align_dir, full_score_dir, base_f
             seg_idx += 1
 
 
-def prepare_data_for_acoustic_models(full_align_dir, full_score_dir, base_files, sampling_rate):
+def prepare_data_for_acoustic_models(full_align_dir, full_score_dir, base_files, sample_rate):
     """
     Prepare data for acoustic models
     """
@@ -205,7 +206,7 @@ def prepare_data_for_acoustic_models(full_align_dir, full_score_dir, base_files,
         # print(wav_path)
         assert exists(wav_path)
         # sr, wave = wavfile.read(wav_path)
-        wav, sr = librosa.load(wav_path, sr=sampling_rate)
+        wav, sr = librosa.load(wav_path, sr=sample_rate)
 
         # gain normalize
         wav = wav / wav.max() * 0.99
@@ -248,6 +249,6 @@ def prepare_data_for_acoustic_models(full_align_dir, full_score_dir, base_files,
 if __name__ == '__main__':
     print('0-4 start : finalize_lab.py')
     prepare_data_for_time_lag_models(FULL_ALIGN_DIR, FULL_SCORE_DIR, BASE_FILES)
-    prepare_data_for_time_duration_models(FULL_ALIGN_DIR, FULL_SCORE_DIR, BASE_FILES)
-    prepare_data_for_acoustic_models(FULL_ALIGN_DIR, FULL_SCORE_DIR, BASE_FILES, SAMPLING_RATE)
+    prepare_data_for_time_duration_models(FULL_ALIGN_DIR, BASE_FILES)
+    prepare_data_for_acoustic_models(FULL_ALIGN_DIR, FULL_SCORE_DIR, BASE_FILES, SAMPLE_RATE)
     print('0-4 start : finalize_lab.py')

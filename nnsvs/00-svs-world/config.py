@@ -39,3 +39,7 @@ offset_correction_threshold = 0.01
 # Time-lag constraints to filter outliers
 timelag_allowed_range = (-20, 19)
 timelag_allowed_range_rest = (-40, 39)
+
+# sample rate of wav (Hz), and frame period (100ns)
+sample_rate = 44100  # Hz
+frame_period = 50000  # 100ns

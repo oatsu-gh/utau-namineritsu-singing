@@ -1,10 +1,9 @@
 # coding: utf-8
 from os.path import join
 
+import config
 import jaconv
 import numpy as np
-
-import config
 from nnmnkwii.io import hts
 
 
@@ -177,7 +176,7 @@ def prep_ph2num():
     for p in ["sil", "pau", "br"]:
         ph2num[p] = counter
         counter += 1
-    for k, v in sinsy_phone_mapping.items():
+    for _, v in sinsy_phone_mapping.items():
         for p in v:
             if p not in ph2num:
                 ph2num[p] = counter
@@ -215,8 +214,7 @@ def trim_sil_and_pau(lab, return_indices=False):
 
     if return_indices:
         return lab[forward:backward + 1], forward, backward
-    else:
-        return lab[forward:backward + 1]
+    return lab[forward:backward + 1]
 
 
 def get_note_indices(lab):
@@ -249,4 +247,4 @@ def fix_mono_lab_after_align(lab):
             f.append((f.end_times[-1], lab.end_times[i], lab.contexts[i]))
         else:
             f.append(lab[i], strict=False)
-    return(f)
+    return f
