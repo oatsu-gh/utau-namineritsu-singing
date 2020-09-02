@@ -1,4 +1,11 @@
+# utau-namineritsu-singing (branch "moresampler")
+
+moresamplerで原音設定をして、エンジンにmoresamplerを指定して合成した音声を使うバージョン
+
+---
+
 # utau-namineritsu-singing
+
 UTAU音源「波音リツ・キレ連続音 Ver1.0」の音声で作った試験用歌唱データベース。NNSVS用のスクリプトを同梱しています。
 
 ## NNSVSでの実行
