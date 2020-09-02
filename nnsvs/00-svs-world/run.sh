@@ -16,7 +16,7 @@ f0_floor=200
 
 
 # HTS-style question used for extracting musical/linguistic context from musicxml files
-question_path=./conf/jp_qst001_nnsvs_simple_3.hed
+question_path=./conf/jp_qst001_nnsvs_simple_4.hed
 # sample rate of WAV files (Hz)
 sample_rate=44100
 # frame period (ms)
@@ -27,17 +27,17 @@ dumpdir=dump
 # leave empty to disable
 pretrained_expdir=
 
-num_workers=16
-batch_size=2
+num_workers=20
+batch_size=1
 
 stage=0
 stop_stage=7
 
 # exp tag
-tag="simple_qst_3_318dim" # tag for managing experiments.
-timelag_in_dim=318
-duration_in_dim=318
-acoustic_in_dim=322
+tag="simple_qst_4" # tag for managing experiments.
+timelag_in_dim=285
+duration_in_dim=285
+acoustic_in_dim=289
 
 
 . $NNSVS_ROOT/utils/parse_options.sh || exit 1;
@@ -71,7 +71,7 @@ else
 fi
 expdir=exp/$expname
 
-if [ ${stage} -le -2 ] && [ ${stop_stage} -ge -2 ]; then
+if [ ${stage} = -2 ] && [ ${stop_stage} -ge -2 ]; then
     echo "stage -2: Clean old files"
     rm -rf data dump outputs
 fi
@@ -110,7 +110,7 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
       nnsvs-prepare-features \
       utt_list=data/list/$s.list \
       out_dir=$dump_org_dir/$s/  \
-      frame_period=$frame_period \
+      acoustic.frame_period=$frame_period \
         question_path=$question_path acoustic.f0_floor=$f0_floor acoustic.f0_ceil=$f0_ceil
     done
 
