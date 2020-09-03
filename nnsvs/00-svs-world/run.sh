@@ -34,7 +34,7 @@ stage=0
 stop_stage=7
 
 # exp tag
-tag="simple_qst_4" # tag for managing experiments.
+tag="moresampler_mix" # tag for managing experiments.
 timelag_in_dim=285
 duration_in_dim=285
 acoustic_in_dim=289

@@ -39,13 +39,18 @@ bash run.sh --stage 0 --stop-stage 6
     - Tool2: doppeltler009
     - mod=0
     - 子音速度 100（Velocity=100）
+    - おま☆かせ2020を使用
+      - ポルタメント：はやめ（80ms）、まんなか（40ms）
+      - 短いピッチ点：無効
+      - ビブラート　：なし
+      - 語尾音素　　：なし
 - LAB（HTS mono-phone label）
   - utau2db v1.0 を利用してUSTから生成
   - 上記のINIを [oto2lab](https://github.com/oatsu-gh/oto2lab) で変換しても同じ結果になると思う
 - MusicXML
   - MuseScore を 利用して MIDI から生成
 - UST（[UTAU](http://utau2008.xrea.jp/)）
-- - INI（[setParam](https://osdn.net/users/nwp8861/pf/setParam/files/)）
+- INI（[setParam](https://osdn.net/users/nwp8861/pf/setParam/files/)）
   - utau2db を利用して UST から生成
   - 使い道はないけど復旧用に置いてる
 - MSCZ（[MuseScore](https://musescore.org)）
