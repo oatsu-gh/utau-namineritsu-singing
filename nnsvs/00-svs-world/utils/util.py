@@ -50,8 +50,7 @@ def trim_long_sil_and_pau(lab, return_indices=False, threshold=10.0):
 
     if return_indices:
         return lab[forward:backward + 1], forward, backward
-    else:
-        return lab[forward:backward + 1]
+    return lab[forward:backward + 1]
 
 
 def compute_nosil_duration(lab, threshold=5.0):
@@ -62,7 +61,7 @@ def compute_nosil_duration(lab, threshold=5.0):
         if is_full_context:
             is_silence = ("-sil" in l or "-pau" in l)
         else:
-            is_silence = (l == "sil" or l == "pau")
+            is_silence = l in ("sil", "pau")
         if is_silence and d > threshold:
             pass
         else:
@@ -181,7 +180,7 @@ def prep_ph2num():
             if p not in ph2num:
                 ph2num[p] = counter
                 counter += 1
-    for k, v in kiritan_phone_mapping.items():
+    for _, v in kiritan_phone_mapping.items():
         for p in v:
             if p not in ph2num:
                 ph2num[p] = counter

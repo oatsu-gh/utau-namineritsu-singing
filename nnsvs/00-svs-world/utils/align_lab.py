@@ -41,7 +41,7 @@ def main():
             continue
 
         # align two labels roughly based on the phoneme labels
-        d, path = fastdtw(ph2numeric(lab_sinsy.contexts, ph2num),
+        _, path = fastdtw(ph2numeric(lab_sinsy.contexts, ph2num),
                           ph2numeric(lab_mono_label.contexts, ph2num), radius=len(lab_mono_label))
 
         # Edit sinsy labels with hand-annontated aligments

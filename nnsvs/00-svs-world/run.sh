@@ -27,7 +27,7 @@ dumpdir=dump
 # leave empty to disable
 pretrained_expdir=
 
-num_workers=20
+num_workers=24
 batch_size=1
 
 stage=0
