@@ -1,4 +1,4 @@
-# nnsvs-utau-namineritsu-v2.1.1
+# nnsvs-utau-namineritsu-v2.2.0
 
 utau-namineritsu-singing をNNSVSの音声ライブラリ化したものです。
 
@@ -28,11 +28,11 @@ bash run.sh --stage 0 --stop-stage 6
 ## 仕様
 
 - 曲数：40
-- BPM：60 ~ 263（最短は16分音符）
+- BPM：60 ~ 120くらい（最短は16分音符）
   - UST より [bpm_and_range_from_ust](https://github.com/oatsu-gh/oto2lab/tree/master/tool/bpm_and_range_from_ust) を使って算出
-- 音域：C2 (220 Hz) ~ B6 (659.255 Hz)
+- 音域：C2 (220 Hz) ~ わすれた
   - UST より [bpm_and_range_from_ust](https://github.com/oatsu-gh/oto2lab/tree/master/tool/bpm_and_range_from_ust) を使って算出
-- 有音発声時間：およそ 9455 秒
+- 有音発声時間：およそ 5000 秒（たぶん）
   - LAB より [voiced_part_length_from_lab](https://github.com/oatsu-gh/oto2lab/tree/master/tool/voiced_part_length_from_lab) を使って算出
 
 ### 同梱ファイル
@@ -41,8 +41,8 @@ bash run.sh --stage 0 --stop-stage 6
 - WAV
   - mono / 16bit / 44.1kHz
   - UTAUで生成
-    - Tool1: wavtool4vcv
-    - Tool2: doppeltler009
+    - Tool1: moresampler 0.8.4
+    - Tool2: moresampler 0.8.4
     - mod=0
     - 子音速度 100（Velocity=100）
 - LAB（HTS mono-phone label）
@@ -88,3 +88,6 @@ bash run.sh --stage 0 --stop-stage 6
 - [utaupy](https://github.com/oatsu-gh/utaupy) v1.6.3
 - [utau2db](https://github.com/oatsu-gh/utau2db) v1.1.0
 - [generate_random_ust](https://github.com/oatsu-gh/oto2lab/tree/master/tool/generate_random_ust)
+- moresampler 0.8.4
+- ustToWav
+- VoiceEngineChanger
